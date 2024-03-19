@@ -47,6 +47,7 @@ namespace ZastitariTest
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
+            panel3.SuspendLayout();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
             SuspendLayout();
@@ -103,6 +104,8 @@ namespace ZastitariTest
             // button1
             // 
             button1.BackColor = Color.FromArgb(53, 92, 125);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.Black;
             button1.Image = (Image)resources.GetObject("button1.Image");
@@ -118,6 +121,7 @@ namespace ZastitariTest
             // 
             // panel3
             // 
+            panel3.Controls.Add(button2);
             panel3.Location = new Point(842, 73);
             panel3.Name = "panel3";
             panel3.Size = new Size(247, 57);
@@ -126,11 +130,13 @@ namespace ZastitariTest
             // button2
             // 
             button2.BackColor = Color.FromArgb(53, 92, 125);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.Black;
             button2.Image = (Image)resources.GetObject("button2.Image");
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(781, 150);
+            button2.Location = new Point(0, 0);
             button2.Margin = new Padding(0);
             button2.Name = "button2";
             button2.Padding = new Padding(10, 0, 0, 0);
@@ -143,14 +149,16 @@ namespace ZastitariTest
             // panel4
             // 
             panel4.Controls.Add(button3);
-            panel4.Location = new Point(503, 313);
+            panel4.Location = new Point(833, 186);
             panel4.Name = "panel4";
-            panel4.Size = new Size(247, 57);
+            panel4.Size = new Size(247, 54);
             panel4.TabIndex = 4;
             // 
             // button3
             // 
             button3.BackColor = Color.FromArgb(53, 92, 125);
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.Black;
             button3.Image = (Image)resources.GetObject("button3.Image");
@@ -201,9 +209,8 @@ namespace ZastitariTest
             AutoScaleDimensions = new SizeF(10F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1471, 583);
-            Controls.Add(button2);
-            Controls.Add(panel4);
             Controls.Add(panel5);
+            Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel1);
@@ -217,6 +224,7 @@ namespace ZastitariTest
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             flowLayoutPanel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel5.ResumeLayout(false);
             ResumeLayout(false);
