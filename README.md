@@ -4,5 +4,5 @@
 
 ### Side bar
 - [x] Postaviti layout
-- [ ] Staviti ikone na veličinu 24
-- [ ] Staviti font na veličinu 10
+- [ ] Staviti ikone na veličinu 20
+- [ ] Staviti font na veličinu 9, Sagoe UI
