@@ -370,7 +370,7 @@ namespace ZastitariTest
             osobeContainer.Location = new Point(0, 70);
             osobeContainer.Margin = new Padding(0);
             osobeContainer.Name = "osobeContainer";
-            osobeContainer.Size = new Size(180, 35);
+            osobeContainer.Size = new Size(180, 176);
             osobeContainer.TabIndex = 24;
             // 
             // btnOsobeDodaj
@@ -391,6 +391,7 @@ namespace ZastitariTest
             btnOsobeDodaj.Text = "            Dodaj novi";
             btnOsobeDodaj.TextAlign = ContentAlignment.MiddleLeft;
             btnOsobeDodaj.UseVisualStyleBackColor = false;
+            btnOsobeDodaj.Click += btnOsobeDodaj_Click;
             // 
             // btnOsobeRaspored
             // 
@@ -458,7 +459,7 @@ namespace ZastitariTest
             btnPostavke.ForeColor = Color.Black;
             btnPostavke.Image = (Image)resources.GetObject("btnPostavke.Image");
             btnPostavke.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPostavke.Location = new Point(0, 105);
+            btnPostavke.Location = new Point(0, 246);
             btnPostavke.Margin = new Padding(0);
             btnPostavke.Name = "btnPostavke";
             btnPostavke.Padding = new Padding(10, 0, 0, 0);
@@ -477,7 +478,7 @@ namespace ZastitariTest
             btnInfo.ForeColor = Color.Black;
             btnInfo.Image = (Image)resources.GetObject("btnInfo.Image");
             btnInfo.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInfo.Location = new Point(0, 140);
+            btnInfo.Location = new Point(0, 281);
             btnInfo.Margin = new Padding(0);
             btnInfo.Name = "btnInfo";
             btnInfo.Padding = new Padding(10, 0, 0, 0);
@@ -496,7 +497,7 @@ namespace ZastitariTest
             btnIzlaz.ForeColor = Color.Black;
             btnIzlaz.Image = (Image)resources.GetObject("btnIzlaz.Image");
             btnIzlaz.ImageAlign = ContentAlignment.MiddleLeft;
-            btnIzlaz.Location = new Point(0, 175);
+            btnIzlaz.Location = new Point(0, 316);
             btnIzlaz.Margin = new Padding(0);
             btnIzlaz.Name = "btnIzlaz";
             btnIzlaz.Padding = new Padding(10, 0, 0, 0);
@@ -528,13 +529,13 @@ namespace ZastitariTest
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(1223, 695);
             Controls.Add(sideBar);
             Controls.Add(panel1);
             Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ForeColor = Color.White;
+            IsMdiContainer = true;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;

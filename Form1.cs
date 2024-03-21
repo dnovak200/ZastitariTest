@@ -2,6 +2,8 @@ namespace ZastitariTest
 {
     public partial class Form1 : Form
     {
+        FormOsobeDodaj formOsobeDodaj;
+
         public Form1()
         {
             InitializeComponent();
@@ -131,6 +133,27 @@ namespace ZastitariTest
         private void btnMenu_Click(object sender, EventArgs e)
         {
             sidebarTransition.Start();
+        }
+
+        private void btnOsobeDodaj_Click(object sender, EventArgs e)
+        {
+            if(formOsobeDodaj == null) 
+            {
+                formOsobeDodaj = new FormOsobeDodaj();
+                formOsobeDodaj.FormClosing += FormOsobeDodaj_FormClosing;
+                formOsobeDodaj.MdiParent = this;
+                formOsobeDodaj.Show();
+                formOsobeDodaj.Dock = DockStyle.Fill;
+            }
+            else 
+            {  
+                formOsobeDodaj.Activate();
+            }
+        }
+
+        private void FormOsobeDodaj_FormClosing(object? sender, FormClosingEventArgs e)
+        {
+            formOsobeDodaj = null;
         }
     }
 }
