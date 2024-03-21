@@ -56,7 +56,9 @@ namespace ZastitariTest
             btnPostavke = new Button();
             btnInfo = new Button();
             btnIzlaz = new Button();
-            menuTransition = new System.Windows.Forms.Timer(components);
+            partneriTransition = new System.Windows.Forms.Timer(components);
+            projektiTransition = new System.Windows.Forms.Timer(components);
+            osobeTransition = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
@@ -83,6 +85,7 @@ namespace ZastitariTest
             btnPartneri.Text = "              Partneri";
             btnPartneri.TextAlign = ContentAlignment.MiddleLeft;
             btnPartneri.UseVisualStyleBackColor = false;
+            btnPartneri.Click += btnPartneri_Click;
             // 
             // btnOsobe
             // 
@@ -102,6 +105,7 @@ namespace ZastitariTest
             btnOsobe.Text = "              Osobe";
             btnOsobe.TextAlign = ContentAlignment.MiddleLeft;
             btnOsobe.UseVisualStyleBackColor = false;
+            btnOsobe.Click += btnOsobe_Click;
             // 
             // btnPartneriImport
             // 
@@ -183,7 +187,7 @@ namespace ZastitariTest
             partneriContainer.Location = new Point(0, 0);
             partneriContainer.Margin = new Padding(0);
             partneriContainer.Name = "partneriContainer";
-            partneriContainer.Size = new Size(180, 176);
+            partneriContainer.Size = new Size(180, 35);
             partneriContainer.TabIndex = 21;
             // 
             // btnPartneriDodaj
@@ -251,10 +255,10 @@ namespace ZastitariTest
             projektiContainer.Controls.Add(btnProjektiRaspored);
             projektiContainer.Controls.Add(btnProjektiExport);
             projektiContainer.Controls.Add(btnProjektiImport);
-            projektiContainer.Location = new Point(0, 176);
+            projektiContainer.Location = new Point(0, 35);
             projektiContainer.Margin = new Padding(0);
             projektiContainer.Name = "projektiContainer";
-            projektiContainer.Size = new Size(180, 176);
+            projektiContainer.Size = new Size(180, 35);
             projektiContainer.TabIndex = 23;
             // 
             // btnProjekti
@@ -275,6 +279,7 @@ namespace ZastitariTest
             btnProjekti.Text = "              Projekti";
             btnProjekti.TextAlign = ContentAlignment.MiddleLeft;
             btnProjekti.UseVisualStyleBackColor = false;
+            btnProjekti.Click += btnProjekti_Click;
             // 
             // btnProjektiDodaj
             // 
@@ -360,10 +365,10 @@ namespace ZastitariTest
             osobeContainer.Controls.Add(btnOsobeRaspored);
             osobeContainer.Controls.Add(btnOsobeExport);
             osobeContainer.Controls.Add(btnOsobeImport);
-            osobeContainer.Location = new Point(0, 352);
+            osobeContainer.Location = new Point(0, 70);
             osobeContainer.Margin = new Padding(0);
             osobeContainer.Name = "osobeContainer";
-            osobeContainer.Size = new Size(180, 176);
+            osobeContainer.Size = new Size(180, 35);
             osobeContainer.TabIndex = 24;
             // 
             // btnOsobeDodaj
@@ -451,7 +456,7 @@ namespace ZastitariTest
             btnPostavke.ForeColor = Color.Black;
             btnPostavke.Image = (Image)resources.GetObject("btnPostavke.Image");
             btnPostavke.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPostavke.Location = new Point(0, 528);
+            btnPostavke.Location = new Point(0, 105);
             btnPostavke.Margin = new Padding(0);
             btnPostavke.Name = "btnPostavke";
             btnPostavke.Padding = new Padding(10, 0, 0, 0);
@@ -470,7 +475,7 @@ namespace ZastitariTest
             btnInfo.ForeColor = Color.Black;
             btnInfo.Image = (Image)resources.GetObject("btnInfo.Image");
             btnInfo.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInfo.Location = new Point(0, 563);
+            btnInfo.Location = new Point(0, 140);
             btnInfo.Margin = new Padding(0);
             btnInfo.Name = "btnInfo";
             btnInfo.Padding = new Padding(10, 0, 0, 0);
@@ -489,7 +494,7 @@ namespace ZastitariTest
             btnIzlaz.ForeColor = Color.Black;
             btnIzlaz.Image = (Image)resources.GetObject("btnIzlaz.Image");
             btnIzlaz.ImageAlign = ContentAlignment.MiddleLeft;
-            btnIzlaz.Location = new Point(0, 598);
+            btnIzlaz.Location = new Point(0, 175);
             btnIzlaz.Margin = new Padding(0);
             btnIzlaz.Name = "btnIzlaz";
             btnIzlaz.Padding = new Padding(10, 0, 0, 0);
@@ -499,9 +504,20 @@ namespace ZastitariTest
             btnIzlaz.TextAlign = ContentAlignment.MiddleLeft;
             btnIzlaz.UseVisualStyleBackColor = false;
             // 
-            // menuTransition
+            // partneriTransition
             // 
-            menuTransition.Tick += menuTransition_Tick;
+            partneriTransition.Interval = 5;
+            partneriTransition.Tick += partnerTransition_Tick;
+            // 
+            // projektiTransition
+            // 
+            projektiTransition.Interval = 5;
+            projektiTransition.Tick += projektiTransition_Tick;
+            // 
+            // osobeTransition
+            // 
+            osobeTransition.Interval = 5;
+            osobeTransition.Tick += osobeTransition_Tick;
             // 
             // Form1
             // 
@@ -514,6 +530,7 @@ namespace ZastitariTest
             ForeColor = Color.White;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -548,8 +565,10 @@ namespace ZastitariTest
         private Button btnOsobeExport;
         private Button btnOsobeImport;
         private Button btnInfo;
-        private System.Windows.Forms.Timer menuTransition;
+        private System.Windows.Forms.Timer partneriTransition;
         private Button btnPostavke;
         private Button btnIzlaz;
+        private System.Windows.Forms.Timer projektiTransition;
+        private System.Windows.Forms.Timer osobeTransition;
     }
 }
