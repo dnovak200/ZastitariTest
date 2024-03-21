@@ -36,8 +36,8 @@ namespace ZastitariTest
             btnPartneriImport = new Button();
             panel1 = new Panel();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
-            flowLayoutPanel1 = new FlowLayoutPanel();
+            btnMenu = new PictureBox();
+            sideBar = new FlowLayoutPanel();
             partneriContainer = new FlowLayoutPanel();
             btnPartneriDodaj = new Button();
             btnPartneriRaspored = new Button();
@@ -59,9 +59,10 @@ namespace ZastitariTest
             partneriTransition = new System.Windows.Forms.Timer(components);
             projektiTransition = new System.Windows.Forms.Timer(components);
             osobeTransition = new System.Windows.Forms.Timer(components);
+            sidebarTransition = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnMenu).BeginInit();
+            sideBar.SuspendLayout();
             partneriContainer.SuspendLayout();
             projektiContainer.SuspendLayout();
             osobeContainer.SuspendLayout();
@@ -82,7 +83,7 @@ namespace ZastitariTest
             btnPartneri.Padding = new Padding(10, 0, 0, 0);
             btnPartneri.Size = new Size(180, 35);
             btnPartneri.TabIndex = 2;
-            btnPartneri.Text = "              Partneri";
+            btnPartneri.Text = "           Partneri";
             btnPartneri.TextAlign = ContentAlignment.MiddleLeft;
             btnPartneri.UseVisualStyleBackColor = false;
             btnPartneri.Click += btnPartneri_Click;
@@ -102,7 +103,7 @@ namespace ZastitariTest
             btnOsobe.Padding = new Padding(10, 0, 0, 0);
             btnOsobe.Size = new Size(180, 35);
             btnOsobe.TabIndex = 6;
-            btnOsobe.Text = "              Osobe";
+            btnOsobe.Text = "           Osobe";
             btnOsobe.TextAlign = ContentAlignment.MiddleLeft;
             btnOsobe.UseVisualStyleBackColor = false;
             btnOsobe.Click += btnOsobe_Click;
@@ -131,7 +132,7 @@ namespace ZastitariTest
             panel1.BackColor = Color.FromArgb(142, 195, 176);
             panel1.BackgroundImageLayout = ImageLayout.None;
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(btnMenu);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -143,38 +144,39 @@ namespace ZastitariTest
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(68, 9);
+            label1.Location = new Point(59, 9);
             label1.Name = "label1";
             label1.Size = new Size(152, 20);
             label1.TabIndex = 21;
             label1.Text = "InTouch Soft Design";
             // 
-            // pictureBox1
+            // btnMenu
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.InitialImage = null;
-            pictureBox1.Location = new Point(3, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(34, 32);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 20;
-            pictureBox1.TabStop = false;
+            btnMenu.Image = (Image)resources.GetObject("btnMenu.Image");
+            btnMenu.InitialImage = null;
+            btnMenu.Location = new Point(3, 3);
+            btnMenu.Name = "btnMenu";
+            btnMenu.Size = new Size(34, 32);
+            btnMenu.SizeMode = PictureBoxSizeMode.CenterImage;
+            btnMenu.TabIndex = 20;
+            btnMenu.TabStop = false;
+            btnMenu.Click += btnMenu_Click;
             // 
-            // flowLayoutPanel1
+            // sideBar
             // 
-            flowLayoutPanel1.BackColor = Color.FromArgb(142, 195, 176);
-            flowLayoutPanel1.Controls.Add(partneriContainer);
-            flowLayoutPanel1.Controls.Add(projektiContainer);
-            flowLayoutPanel1.Controls.Add(osobeContainer);
-            flowLayoutPanel1.Controls.Add(btnPostavke);
-            flowLayoutPanel1.Controls.Add(btnInfo);
-            flowLayoutPanel1.Controls.Add(btnIzlaz);
-            flowLayoutPanel1.Dock = DockStyle.Left;
-            flowLayoutPanel1.Location = new Point(0, 39);
-            flowLayoutPanel1.Margin = new Padding(0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(180, 656);
-            flowLayoutPanel1.TabIndex = 20;
+            sideBar.BackColor = Color.FromArgb(142, 195, 176);
+            sideBar.Controls.Add(partneriContainer);
+            sideBar.Controls.Add(projektiContainer);
+            sideBar.Controls.Add(osobeContainer);
+            sideBar.Controls.Add(btnPostavke);
+            sideBar.Controls.Add(btnInfo);
+            sideBar.Controls.Add(btnIzlaz);
+            sideBar.Dock = DockStyle.Left;
+            sideBar.Location = new Point(0, 39);
+            sideBar.Margin = new Padding(0);
+            sideBar.Name = "sideBar";
+            sideBar.Size = new Size(180, 656);
+            sideBar.TabIndex = 20;
             // 
             // partneriContainer
             // 
@@ -276,7 +278,7 @@ namespace ZastitariTest
             btnProjekti.Padding = new Padding(10, 0, 0, 0);
             btnProjekti.Size = new Size(180, 35);
             btnProjekti.TabIndex = 6;
-            btnProjekti.Text = "              Projekti";
+            btnProjekti.Text = "           Projekti";
             btnProjekti.TextAlign = ContentAlignment.MiddleLeft;
             btnProjekti.UseVisualStyleBackColor = false;
             btnProjekti.Click += btnProjekti_Click;
@@ -462,7 +464,7 @@ namespace ZastitariTest
             btnPostavke.Padding = new Padding(10, 0, 0, 0);
             btnPostavke.Size = new Size(180, 35);
             btnPostavke.TabIndex = 24;
-            btnPostavke.Text = "              Postavke";
+            btnPostavke.Text = "           Postavke";
             btnPostavke.TextAlign = ContentAlignment.MiddleLeft;
             btnPostavke.UseVisualStyleBackColor = false;
             // 
@@ -481,7 +483,7 @@ namespace ZastitariTest
             btnInfo.Padding = new Padding(10, 0, 0, 0);
             btnInfo.Size = new Size(180, 35);
             btnInfo.TabIndex = 6;
-            btnInfo.Text = "              Info";
+            btnInfo.Text = "           Info";
             btnInfo.TextAlign = ContentAlignment.MiddleLeft;
             btnInfo.UseVisualStyleBackColor = false;
             // 
@@ -500,7 +502,7 @@ namespace ZastitariTest
             btnIzlaz.Padding = new Padding(10, 0, 0, 0);
             btnIzlaz.Size = new Size(180, 35);
             btnIzlaz.TabIndex = 24;
-            btnIzlaz.Text = "              Izlaz";
+            btnIzlaz.Text = "           Izlaz";
             btnIzlaz.TextAlign = ContentAlignment.MiddleLeft;
             btnIzlaz.UseVisualStyleBackColor = false;
             // 
@@ -519,12 +521,17 @@ namespace ZastitariTest
             osobeTransition.Interval = 5;
             osobeTransition.Tick += osobeTransition_Tick;
             // 
+            // sidebarTransition
+            // 
+            sidebarTransition.Interval = 5;
+            sidebarTransition.Tick += sidebarTransition_Tick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1223, 695);
-            Controls.Add(flowLayoutPanel1);
+            Controls.Add(sideBar);
             Controls.Add(panel1);
             Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ForeColor = Color.White;
@@ -533,8 +540,8 @@ namespace ZastitariTest
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)btnMenu).EndInit();
+            sideBar.ResumeLayout(false);
             partneriContainer.ResumeLayout(false);
             projektiContainer.ResumeLayout(false);
             osobeContainer.ResumeLayout(false);
@@ -546,9 +553,9 @@ namespace ZastitariTest
         private Button btnPartneriImport;
         private Button btnOsobe;
         private Panel panel1;
-        private PictureBox pictureBox1;
+        private PictureBox btnMenu;
         private Label label1;
-        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel sideBar;
         private FlowLayoutPanel partneriContainer;
         private Button btnPartneriDodaj;
         private Button btnPartneriRaspored;
@@ -570,5 +577,6 @@ namespace ZastitariTest
         private Button btnIzlaz;
         private System.Windows.Forms.Timer projektiTransition;
         private System.Windows.Forms.Timer osobeTransition;
+        private System.Windows.Forms.Timer sidebarTransition;
     }
 }

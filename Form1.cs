@@ -13,7 +13,7 @@ namespace ZastitariTest
         {
             if (partnerExpand == false)
             {
-                partneriContainer.Height += 10;
+                partneriContainer.Height += 8;
                 if (partneriContainer.Height >= 176)
                 {
                     partneriTransition.Stop();
@@ -22,7 +22,7 @@ namespace ZastitariTest
             }
             else
             {
-                partneriContainer.Height -= 10;
+                partneriContainer.Height -= 8;
                 if (partneriContainer.Height <= 35)
                 {
                     partneriTransition.Stop();
@@ -44,27 +44,26 @@ namespace ZastitariTest
 
         private void projektiTransition_Tick(object sender, EventArgs e)
         {
-            {
-                if (projektiExpand == false)
-                {
-                    projektiContainer.Height += 10;
-                    if (projektiContainer.Height >= 176)
-                    {
-                        projektiTransition.Stop();
-                        projektiExpand = true;
-                    }
-                }
-                else
-                {
-                    projektiContainer.Height -= 10;
-                    if (projektiContainer.Height <= 35)
-                    {
-                        projektiTransition.Stop();
-                        projektiExpand = false;
-                    }
-                }
 
+            if (projektiExpand == false)
+            {
+                projektiContainer.Height += 8;
+                if (projektiContainer.Height >= 176)
+                {
+                    projektiTransition.Stop();
+                    projektiExpand = true;
+                }
             }
+            else
+            {
+                projektiContainer.Height -= 8;
+                if (projektiContainer.Height <= 35)
+                {
+                    projektiTransition.Stop();
+                    projektiExpand = false;
+                }
+            }
+
         }
 
         private void btnProjekti_Click(object sender, EventArgs e)
@@ -77,31 +76,61 @@ namespace ZastitariTest
 
         private void osobeTransition_Tick(object sender, EventArgs e)
         {
+            if (osobeExpand == false)
             {
-                if (osobeExpand == false)
+                osobeContainer.Height += 8;
+                if (osobeContainer.Height >= 176)
                 {
-                    osobeContainer.Height += 10;
-                    if (osobeContainer.Height >= 176)
-                    {
-                        osobeTransition.Stop();
-                        osobeExpand = true;
-                    }
-                }
-                else
-                {
-                    osobeContainer.Height -= 10;
-                    if (osobeContainer.Height <= 35)
-                    {
-                        osobeTransition.Stop();
-                        osobeExpand = false;
-                    }
+                    osobeTransition.Stop();
+                    osobeExpand = true;
                 }
             }
+            else
+            {
+                osobeContainer.Height -= 8;
+                if (osobeContainer.Height <= 35)
+                {
+                    osobeTransition.Stop();
+                    osobeExpand = false;
+                }
+            }
+
         }
 
         private void btnOsobe_Click(object sender, EventArgs e)
         {
             osobeTransition.Start();
+        }
+
+        bool sideBarExpand = true;
+
+        private void sidebarTransition_Tick(object sender, EventArgs e)
+        {
+
+            if (sideBarExpand == true)
+            {
+                sideBar.Width -= 8;
+                if (sideBar.Width <= 51)
+                {
+                    sidebarTransition.Stop();
+                    sideBarExpand = false;
+                }
+            }
+            else
+            {
+                sideBar.Width += 8;
+                if (sideBar.Width >= 180)
+                {
+                    sidebarTransition.Stop();
+                    sideBarExpand = true;
+                }
+            }
+
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            sidebarTransition.Start();
         }
     }
 }
