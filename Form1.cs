@@ -10,8 +10,10 @@ namespace ZastitariTest
 
         private void menuTransition_Tick(object sender, EventArgs e)
         {
-            if (menuExpand == false) {
-            
+            if (menuExpand == false) 
+            {
+
+
             }
         }
     }

@@ -48,26 +48,26 @@ namespace ZastitariTest
             btnProjektiRaspored = new Button();
             btnProjektiExport = new Button();
             btnProjektiImport = new Button();
-            osobeConteiner = new FlowLayoutPanel();
+            osobeContainer = new FlowLayoutPanel();
             btnOsobeDodaj = new Button();
             btnOsobeRaspored = new Button();
             btnOsobeExport = new Button();
             btnOsobeImport = new Button();
-            btnInfo = new Button();
-            menuTransition = new System.Windows.Forms.Timer(components);
             btnPostavke = new Button();
+            btnInfo = new Button();
             btnIzlaz = new Button();
+            menuTransition = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             flowLayoutPanel1.SuspendLayout();
             partneriContainer.SuspendLayout();
             projektiContainer.SuspendLayout();
-            osobeConteiner.SuspendLayout();
+            osobeContainer.SuspendLayout();
             SuspendLayout();
             // 
             // btnPartneri
             // 
-            btnPartneri.BackColor = Color.FromArgb(53, 92, 125);
+            btnPartneri.BackColor = Color.FromArgb(142, 195, 176);
             btnPartneri.FlatAppearance.BorderSize = 0;
             btnPartneri.FlatStyle = FlatStyle.Flat;
             btnPartneri.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -86,7 +86,7 @@ namespace ZastitariTest
             // 
             // btnOsobe
             // 
-            btnOsobe.BackColor = Color.FromArgb(53, 92, 125);
+            btnOsobe.BackColor = Color.FromArgb(142, 195, 176);
             btnOsobe.FlatAppearance.BorderSize = 0;
             btnOsobe.FlatStyle = FlatStyle.Flat;
             btnOsobe.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -105,7 +105,7 @@ namespace ZastitariTest
             // 
             // btnPartneriImport
             // 
-            btnPartneriImport.BackColor = Color.FromArgb(108, 91, 123);
+            btnPartneriImport.BackColor = Color.FromArgb(188, 234, 213);
             btnPartneriImport.FlatAppearance.BorderSize = 0;
             btnPartneriImport.FlatStyle = FlatStyle.Flat;
             btnPartneriImport.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -124,24 +124,24 @@ namespace ZastitariTest
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(53, 92, 125);
+            panel1.BackColor = Color.FromArgb(142, 195, 176);
             panel1.BackgroundImageLayout = ImageLayout.None;
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1471, 45);
+            panel1.Size = new Size(1223, 39);
             panel1.TabIndex = 19;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 10.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(64, 12);
+            label1.Location = new Point(68, 9);
             label1.Name = "label1";
-            label1.Size = new Size(204, 20);
+            label1.Size = new Size(152, 20);
             label1.TabIndex = 21;
             label1.Text = "InTouch Soft Design";
             // 
@@ -151,30 +151,30 @@ namespace ZastitariTest
             pictureBox1.InitialImage = null;
             pictureBox1.Location = new Point(3, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(45, 37);
+            pictureBox1.Size = new Size(34, 32);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 20;
             pictureBox1.TabStop = false;
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.BackColor = Color.FromArgb(53, 92, 125);
+            flowLayoutPanel1.BackColor = Color.FromArgb(142, 195, 176);
             flowLayoutPanel1.Controls.Add(partneriContainer);
             flowLayoutPanel1.Controls.Add(projektiContainer);
-            flowLayoutPanel1.Controls.Add(osobeConteiner);
+            flowLayoutPanel1.Controls.Add(osobeContainer);
             flowLayoutPanel1.Controls.Add(btnPostavke);
             flowLayoutPanel1.Controls.Add(btnInfo);
             flowLayoutPanel1.Controls.Add(btnIzlaz);
             flowLayoutPanel1.Dock = DockStyle.Left;
-            flowLayoutPanel1.Location = new Point(0, 45);
+            flowLayoutPanel1.Location = new Point(0, 39);
             flowLayoutPanel1.Margin = new Padding(0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(180, 689);
+            flowLayoutPanel1.Size = new Size(180, 656);
             flowLayoutPanel1.TabIndex = 20;
             // 
             // partneriContainer
             // 
-            partneriContainer.BackColor = Color.FromArgb(53, 92, 125);
+            partneriContainer.BackColor = Color.FromArgb(142, 195, 176);
             partneriContainer.Controls.Add(btnPartneri);
             partneriContainer.Controls.Add(btnPartneriDodaj);
             partneriContainer.Controls.Add(btnPartneriRaspored);
@@ -188,7 +188,7 @@ namespace ZastitariTest
             // 
             // btnPartneriDodaj
             // 
-            btnPartneriDodaj.BackColor = Color.FromArgb(108, 91, 123);
+            btnPartneriDodaj.BackColor = Color.FromArgb(188, 234, 213);
             btnPartneriDodaj.FlatAppearance.BorderSize = 0;
             btnPartneriDodaj.FlatStyle = FlatStyle.Flat;
             btnPartneriDodaj.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -207,7 +207,7 @@ namespace ZastitariTest
             // 
             // btnPartneriRaspored
             // 
-            btnPartneriRaspored.BackColor = Color.FromArgb(108, 91, 123);
+            btnPartneriRaspored.BackColor = Color.FromArgb(188, 234, 213);
             btnPartneriRaspored.FlatAppearance.BorderSize = 0;
             btnPartneriRaspored.FlatStyle = FlatStyle.Flat;
             btnPartneriRaspored.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -226,7 +226,7 @@ namespace ZastitariTest
             // 
             // btnPartneriExport
             // 
-            btnPartneriExport.BackColor = Color.FromArgb(108, 91, 123);
+            btnPartneriExport.BackColor = Color.FromArgb(188, 234, 213);
             btnPartneriExport.FlatAppearance.BorderSize = 0;
             btnPartneriExport.FlatStyle = FlatStyle.Flat;
             btnPartneriExport.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -245,7 +245,7 @@ namespace ZastitariTest
             // 
             // projektiContainer
             // 
-            projektiContainer.BackColor = Color.FromArgb(53, 92, 125);
+            projektiContainer.BackColor = Color.FromArgb(142, 195, 176);
             projektiContainer.Controls.Add(btnProjekti);
             projektiContainer.Controls.Add(btnProjektiDodaj);
             projektiContainer.Controls.Add(btnProjektiRaspored);
@@ -259,7 +259,7 @@ namespace ZastitariTest
             // 
             // btnProjekti
             // 
-            btnProjekti.BackColor = Color.FromArgb(53, 92, 125);
+            btnProjekti.BackColor = Color.FromArgb(142, 195, 176);
             btnProjekti.FlatAppearance.BorderSize = 0;
             btnProjekti.FlatStyle = FlatStyle.Flat;
             btnProjekti.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -278,7 +278,7 @@ namespace ZastitariTest
             // 
             // btnProjektiDodaj
             // 
-            btnProjektiDodaj.BackColor = Color.FromArgb(108, 91, 123);
+            btnProjektiDodaj.BackColor = Color.FromArgb(188, 234, 213);
             btnProjektiDodaj.FlatAppearance.BorderSize = 0;
             btnProjektiDodaj.FlatStyle = FlatStyle.Flat;
             btnProjektiDodaj.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -297,7 +297,7 @@ namespace ZastitariTest
             // 
             // btnProjektiRaspored
             // 
-            btnProjektiRaspored.BackColor = Color.FromArgb(108, 91, 123);
+            btnProjektiRaspored.BackColor = Color.FromArgb(188, 234, 213);
             btnProjektiRaspored.FlatAppearance.BorderSize = 0;
             btnProjektiRaspored.FlatStyle = FlatStyle.Flat;
             btnProjektiRaspored.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -316,7 +316,7 @@ namespace ZastitariTest
             // 
             // btnProjektiExport
             // 
-            btnProjektiExport.BackColor = Color.FromArgb(108, 91, 123);
+            btnProjektiExport.BackColor = Color.FromArgb(188, 234, 213);
             btnProjektiExport.FlatAppearance.BorderSize = 0;
             btnProjektiExport.FlatStyle = FlatStyle.Flat;
             btnProjektiExport.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -335,7 +335,7 @@ namespace ZastitariTest
             // 
             // btnProjektiImport
             // 
-            btnProjektiImport.BackColor = Color.FromArgb(108, 91, 123);
+            btnProjektiImport.BackColor = Color.FromArgb(188, 234, 213);
             btnProjektiImport.FlatAppearance.BorderSize = 0;
             btnProjektiImport.FlatStyle = FlatStyle.Flat;
             btnProjektiImport.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -352,23 +352,23 @@ namespace ZastitariTest
             btnProjektiImport.TextAlign = ContentAlignment.MiddleLeft;
             btnProjektiImport.UseVisualStyleBackColor = false;
             // 
-            // osobeConteiner
+            // osobeContainer
             // 
-            osobeConteiner.BackColor = Color.FromArgb(53, 92, 125);
-            osobeConteiner.Controls.Add(btnOsobe);
-            osobeConteiner.Controls.Add(btnOsobeDodaj);
-            osobeConteiner.Controls.Add(btnOsobeRaspored);
-            osobeConteiner.Controls.Add(btnOsobeExport);
-            osobeConteiner.Controls.Add(btnOsobeImport);
-            osobeConteiner.Location = new Point(0, 352);
-            osobeConteiner.Margin = new Padding(0);
-            osobeConteiner.Name = "osobeConteiner";
-            osobeConteiner.Size = new Size(180, 176);
-            osobeConteiner.TabIndex = 24;
+            osobeContainer.BackColor = Color.FromArgb(142, 195, 176);
+            osobeContainer.Controls.Add(btnOsobe);
+            osobeContainer.Controls.Add(btnOsobeDodaj);
+            osobeContainer.Controls.Add(btnOsobeRaspored);
+            osobeContainer.Controls.Add(btnOsobeExport);
+            osobeContainer.Controls.Add(btnOsobeImport);
+            osobeContainer.Location = new Point(0, 352);
+            osobeContainer.Margin = new Padding(0);
+            osobeContainer.Name = "osobeContainer";
+            osobeContainer.Size = new Size(180, 176);
+            osobeContainer.TabIndex = 24;
             // 
             // btnOsobeDodaj
             // 
-            btnOsobeDodaj.BackColor = Color.FromArgb(108, 91, 123);
+            btnOsobeDodaj.BackColor = Color.FromArgb(188, 234, 213);
             btnOsobeDodaj.FlatAppearance.BorderSize = 0;
             btnOsobeDodaj.FlatStyle = FlatStyle.Flat;
             btnOsobeDodaj.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -387,7 +387,7 @@ namespace ZastitariTest
             // 
             // btnOsobeRaspored
             // 
-            btnOsobeRaspored.BackColor = Color.FromArgb(108, 91, 123);
+            btnOsobeRaspored.BackColor = Color.FromArgb(188, 234, 213);
             btnOsobeRaspored.FlatAppearance.BorderSize = 0;
             btnOsobeRaspored.FlatStyle = FlatStyle.Flat;
             btnOsobeRaspored.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -406,7 +406,7 @@ namespace ZastitariTest
             // 
             // btnOsobeExport
             // 
-            btnOsobeExport.BackColor = Color.FromArgb(108, 91, 123);
+            btnOsobeExport.BackColor = Color.FromArgb(188, 234, 213);
             btnOsobeExport.FlatAppearance.BorderSize = 0;
             btnOsobeExport.FlatStyle = FlatStyle.Flat;
             btnOsobeExport.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -425,7 +425,7 @@ namespace ZastitariTest
             // 
             // btnOsobeImport
             // 
-            btnOsobeImport.BackColor = Color.FromArgb(108, 91, 123);
+            btnOsobeImport.BackColor = Color.FromArgb(188, 234, 213);
             btnOsobeImport.FlatAppearance.BorderSize = 0;
             btnOsobeImport.FlatStyle = FlatStyle.Flat;
             btnOsobeImport.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -442,32 +442,9 @@ namespace ZastitariTest
             btnOsobeImport.TextAlign = ContentAlignment.MiddleLeft;
             btnOsobeImport.UseVisualStyleBackColor = false;
             // 
-            // btnInfo
-            // 
-            btnInfo.BackColor = Color.FromArgb(53, 92, 125);
-            btnInfo.FlatAppearance.BorderSize = 0;
-            btnInfo.FlatStyle = FlatStyle.Flat;
-            btnInfo.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            btnInfo.ForeColor = Color.Black;
-            btnInfo.Image = (Image)resources.GetObject("btnInfo.Image");
-            btnInfo.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInfo.Location = new Point(0, 563);
-            btnInfo.Margin = new Padding(0);
-            btnInfo.Name = "btnInfo";
-            btnInfo.Padding = new Padding(10, 0, 0, 0);
-            btnInfo.Size = new Size(180, 35);
-            btnInfo.TabIndex = 6;
-            btnInfo.Text = "              Info";
-            btnInfo.TextAlign = ContentAlignment.MiddleLeft;
-            btnInfo.UseVisualStyleBackColor = false;
-            // 
-            // menuTransition
-            // 
-            menuTransition.Tick += menuTransition_Tick;
-            // 
             // btnPostavke
             // 
-            btnPostavke.BackColor = Color.FromArgb(53, 92, 125);
+            btnPostavke.BackColor = Color.FromArgb(142, 195, 176);
             btnPostavke.FlatAppearance.BorderSize = 0;
             btnPostavke.FlatStyle = FlatStyle.Flat;
             btnPostavke.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -484,9 +461,28 @@ namespace ZastitariTest
             btnPostavke.TextAlign = ContentAlignment.MiddleLeft;
             btnPostavke.UseVisualStyleBackColor = false;
             // 
+            // btnInfo
+            // 
+            btnInfo.BackColor = Color.FromArgb(142, 195, 176);
+            btnInfo.FlatAppearance.BorderSize = 0;
+            btnInfo.FlatStyle = FlatStyle.Flat;
+            btnInfo.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnInfo.ForeColor = Color.Black;
+            btnInfo.Image = (Image)resources.GetObject("btnInfo.Image");
+            btnInfo.ImageAlign = ContentAlignment.MiddleLeft;
+            btnInfo.Location = new Point(0, 563);
+            btnInfo.Margin = new Padding(0);
+            btnInfo.Name = "btnInfo";
+            btnInfo.Padding = new Padding(10, 0, 0, 0);
+            btnInfo.Size = new Size(180, 35);
+            btnInfo.TabIndex = 6;
+            btnInfo.Text = "              Info";
+            btnInfo.TextAlign = ContentAlignment.MiddleLeft;
+            btnInfo.UseVisualStyleBackColor = false;
+            // 
             // btnIzlaz
             // 
-            btnIzlaz.BackColor = Color.FromArgb(53, 92, 125);
+            btnIzlaz.BackColor = Color.FromArgb(142, 195, 176);
             btnIzlaz.FlatAppearance.BorderSize = 0;
             btnIzlaz.FlatStyle = FlatStyle.Flat;
             btnIzlaz.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -503,11 +499,15 @@ namespace ZastitariTest
             btnIzlaz.TextAlign = ContentAlignment.MiddleLeft;
             btnIzlaz.UseVisualStyleBackColor = false;
             // 
+            // menuTransition
+            // 
+            menuTransition.Tick += menuTransition_Tick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1471, 734);
+            ClientSize = new Size(1223, 695);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(panel1);
             Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -520,7 +520,7 @@ namespace ZastitariTest
             flowLayoutPanel1.ResumeLayout(false);
             partneriContainer.ResumeLayout(false);
             projektiContainer.ResumeLayout(false);
-            osobeConteiner.ResumeLayout(false);
+            osobeContainer.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -542,7 +542,7 @@ namespace ZastitariTest
         private Button btnProjektiRaspored;
         private Button btnProjektiExport;
         private Button btnProjektiImport;
-        private FlowLayoutPanel osobeConteiner;
+        private FlowLayoutPanel osobeContainer;
         private Button btnOsobeDodaj;
         private Button btnOsobeRaspored;
         private Button btnOsobeExport;
