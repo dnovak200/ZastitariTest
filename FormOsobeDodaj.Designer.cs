@@ -103,14 +103,14 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(124, 119);
+            textBox2.Location = new Point(127, 119);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 27);
             textBox2.TabIndex = 5;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(124, 152);
+            textBox3.Location = new Point(127, 152);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(125, 27);
             textBox3.TabIndex = 7;
@@ -127,7 +127,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(124, 244);
+            textBox4.Location = new Point(127, 244);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(328, 27);
             textBox4.TabIndex = 9;
@@ -144,7 +144,7 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(124, 277);
+            textBox5.Location = new Point(127, 277);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(83, 27);
             textBox5.TabIndex = 11;
@@ -161,16 +161,16 @@
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(293, 277);
+            textBox6.Location = new Point(278, 277);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(159, 27);
+            textBox6.Size = new Size(176, 27);
             textBox6.TabIndex = 13;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            label8.Location = new Point(229, 280);
+            label8.Location = new Point(225, 280);
             label8.Name = "label8";
             label8.Size = new Size(43, 20);
             label8.TabIndex = 12;
@@ -189,7 +189,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(124, 185);
+            comboBox1.Location = new Point(127, 185);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(83, 28);
             comboBox1.TabIndex = 18;
@@ -199,7 +199,7 @@
             comboBox2.FormattingEnabled = true;
             comboBox2.Location = new Point(592, 118);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(151, 28);
+            comboBox2.Size = new Size(171, 28);
             comboBox2.TabIndex = 20;
             // 
             // label10
@@ -214,7 +214,7 @@
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(124, 310);
+            textBox7.Location = new Point(127, 310);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(328, 27);
             textBox7.TabIndex = 22;
@@ -225,13 +225,13 @@
             label11.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
             label11.Location = new Point(12, 313);
             label11.Name = "label11";
-            label11.Size = new Size(40, 20);
+            label11.Size = new Size(106, 20);
             label11.TabIndex = 21;
-            label11.Text = "Mail:";
+            label11.Text = "Adresa E-pošte:";
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(124, 343);
+            textBox8.Location = new Point(127, 343);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(148, 27);
             textBox8.TabIndex = 24;
