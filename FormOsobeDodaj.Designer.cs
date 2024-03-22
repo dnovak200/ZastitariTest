@@ -189,17 +189,19 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "M", "Ž" });
             comboBox1.Location = new Point(127, 185);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(83, 28);
+            comboBox1.Size = new Size(52, 28);
             comboBox1.TabIndex = 18;
             // 
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "1 - Ugovor o radu", "2 - Student", "3 - Ugovor o djelu", "4 - Ugovor sa d.o.o." });
             comboBox2.Location = new Point(592, 118);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(171, 28);
+            comboBox2.Size = new Size(196, 28);
             comboBox2.TabIndex = 20;
             // 
             // label10
