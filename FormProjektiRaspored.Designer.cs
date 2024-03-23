@@ -65,16 +65,18 @@
             panel1.Controls.Add(lblProjektiNaziv);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1116, 67);
+            panel1.Size = new Size(976, 50);
             panel1.TabIndex = 0;
             // 
             // button2
             // 
             button2.BackColor = Color.FromArgb(142, 195, 176);
-            button2.Location = new Point(998, 12);
+            button2.Location = new Point(873, 9);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(82, 25);
             button2.TabIndex = 27;
             button2.Text = "Odustani";
             button2.UseVisualStyleBackColor = false;
@@ -82,18 +84,20 @@
             // button1
             // 
             button1.BackColor = Color.FromArgb(142, 195, 176);
-            button1.Location = new Point(884, 12);
+            button1.Location = new Point(774, 9);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(82, 25);
             button1.TabIndex = 26;
             button1.Text = "Prihvati";
             button1.UseVisualStyleBackColor = false;
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(570, 12);
+            dateTimePicker1.Location = new Point(499, 9);
+            dateTimePicker1.Margin = new Padding(3, 2, 3, 2);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(250, 27);
+            dateTimePicker1.Size = new Size(219, 23);
             dateTimePicker1.TabIndex = 4;
             // 
             // lblDatum
@@ -101,9 +105,9 @@
             lblDatum.AutoSize = true;
             lblDatum.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
             lblDatum.ForeColor = Color.Black;
-            lblDatum.Location = new Point(416, 17);
+            lblDatum.Location = new Point(364, 13);
             lblDatum.Name = "lblDatum";
-            lblDatum.Size = new Size(136, 20);
+            lblDatum.Size = new Size(112, 15);
             lblDatum.TabIndex = 3;
             lblDatum.Text = "Raspored za datum:";
             // 
@@ -111,9 +115,10 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Poslovna zgrada 1.", "Poslovna zgrada 2.", "Poslovna zgrada 3.", "Skladište 1.", "Skladište 2.", "Skladište 3." });
-            comboBox1.Location = new Point(90, 14);
+            comboBox1.Location = new Point(79, 10);
+            comboBox1.Margin = new Padding(3, 2, 3, 2);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(278, 28);
+            comboBox1.Size = new Size(244, 23);
             comboBox1.TabIndex = 2;
             // 
             // lblProjektiNaziv
@@ -121,9 +126,9 @@
             lblProjektiNaziv.AutoSize = true;
             lblProjektiNaziv.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
             lblProjektiNaziv.ForeColor = Color.Black;
-            lblProjektiNaziv.Location = new Point(12, 17);
+            lblProjektiNaziv.Location = new Point(10, 13);
             lblProjektiNaziv.Name = "lblProjektiNaziv";
-            lblProjektiNaziv.Size = new Size(57, 20);
+            lblProjektiNaziv.Size = new Size(46, 15);
             lblProjektiNaziv.TabIndex = 0;
             lblProjektiNaziv.Text = "Projekt:";
             // 
@@ -132,9 +137,10 @@
             panel2.BackColor = Color.FromArgb(217, 235, 228);
             panel2.Controls.Add(dataGridView1);
             panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 67);
+            panel2.Location = new Point(0, 50);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1116, 522);
+            panel2.Size = new Size(976, 392);
             panel2.TabIndex = 1;
             // 
             // dataGridView1
@@ -143,10 +149,11 @@
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { osobaSifra, osobaNaziv, smjena, vrijemeOd, vrijemeDo, odradjenaSmjena });
-            dataGridView1.Location = new Point(3, 6);
+            dataGridView1.Location = new Point(3, 4);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1057, 465);
+            dataGridView1.Size = new Size(925, 349);
             dataGridView1.TabIndex = 0;
             // 
             // osobaSifra
@@ -215,13 +222,14 @@
             // 
             // FormProjektiRaspored
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1116, 590);
+            ClientSize = new Size(976, 442);
             Controls.Add(panel2);
             Controls.Add(panel1);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FormProjektiRaspored";
             Text = "FormProjektiRaspored";
             panel1.ResumeLayout(false);
