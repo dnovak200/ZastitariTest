@@ -136,7 +136,7 @@ namespace ZastitariTest
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1310, 39);
+            panel1.Size = new Size(1280, 39);
             panel1.TabIndex = 19;
             // 
             // label1
@@ -175,7 +175,7 @@ namespace ZastitariTest
             sideBar.Location = new Point(0, 39);
             sideBar.Margin = new Padding(0);
             sideBar.Name = "sideBar";
-            sideBar.Size = new Size(180, 656);
+            sideBar.Size = new Size(180, 564);
             sideBar.TabIndex = 20;
             // 
             // partneriContainer
@@ -531,7 +531,7 @@ namespace ZastitariTest
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1310, 695);
+            ClientSize = new Size(1280, 603);
             Controls.Add(sideBar);
             Controls.Add(panel1);
             Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);

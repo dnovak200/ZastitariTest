@@ -52,15 +52,6 @@
             label12 = new Label();
             button1 = new Button();
             button2 = new Button();
-            dateTimePicker1 = new DateTimePicker();
-            monthCalendar1 = new MonthCalendar();
-            dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            tableLayoutPanel1 = new TableLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -277,81 +268,12 @@
             button2.Text = "Odustani";
             button2.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(535, 169);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(250, 27);
-            dateTimePicker1.TabIndex = 27;
-            // 
-            // monthCalendar1
-            // 
-            monthCalendar1.Location = new Point(562, 244);
-            monthCalendar1.Name = "monthCalendar1";
-            monthCalendar1.TabIndex = 28;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4 });
-            dataGridView1.Location = new Point(808, 20);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(554, 188);
-            dataGridView1.TabIndex = 29;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Column1";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Column2";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Column3";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            Column4.HeaderText = "Column4";
-            Column4.MinimumWidth = 6;
-            Column4.Name = "Column4";
-            Column4.Width = 125;
-            // 
-            // tableLayoutPanel1
-            // 
-            tableLayoutPanel1.ColumnCount = 3;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel1.Location = new Point(876, 274);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 2;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(312, 125);
-            tableLayoutPanel1.TabIndex = 30;
-            // 
             // FormOsobeDodaj
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(217, 235, 228);
-            ClientSize = new Size(1364, 574);
-            Controls.Add(tableLayoutPanel1);
-            Controls.Add(dataGridView1);
-            Controls.Add(monthCalendar1);
-            Controls.Add(dateTimePicker1);
+            ClientSize = new Size(812, 448);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox8);
@@ -380,7 +302,6 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormOsobeDodaj";
             Text = "FormOsobeDodaj";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -411,13 +332,5 @@
         private Label label12;
         private Button button1;
         private Button button2;
-        private DateTimePicker dateTimePicker1;
-        private MonthCalendar monthCalendar1;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private TableLayoutPanel tableLayoutPanel1;
     }
 }

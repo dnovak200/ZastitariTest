@@ -35,6 +35,8 @@
             DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             panel1 = new Panel();
+            button2 = new Button();
+            button1 = new Button();
             dateTimePicker1 = new DateTimePicker();
             lblDatum = new Label();
             comboBox1 = new ComboBox();
@@ -54,6 +56,9 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.FromArgb(217, 235, 228);
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(dateTimePicker1);
             panel1.Controls.Add(lblDatum);
             panel1.Controls.Add(comboBox1);
@@ -61,8 +66,28 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1275, 67);
+            panel1.Size = new Size(1116, 67);
             panel1.TabIndex = 0;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(142, 195, 176);
+            button2.Location = new Point(998, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 27;
+            button2.Text = "Odustani";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(142, 195, 176);
+            button1.Location = new Point(884, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 26;
+            button1.Text = "Prihvati";
+            button1.UseVisualStyleBackColor = false;
             // 
             // dateTimePicker1
             // 
@@ -104,16 +129,18 @@
             // 
             // panel2
             // 
+            panel2.BackColor = Color.FromArgb(217, 235, 228);
             panel2.Controls.Add(dataGridView1);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(0, 67);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1275, 534);
+            panel2.Size = new Size(1116, 522);
             panel2.TabIndex = 1;
             // 
             // dataGridView1
             // 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { osobaSifra, osobaNaziv, smjena, vrijemeOd, vrijemeDo, odradjenaSmjena });
             dataGridView1.Location = new Point(3, 6);
@@ -190,7 +217,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1275, 601);
+            ClientSize = new Size(1116, 590);
             Controls.Add(panel2);
             Controls.Add(panel1);
             ForeColor = Color.Black;
@@ -219,5 +246,7 @@
         private DataGridViewTextBoxColumn vrijemeOd;
         private DataGridViewTextBoxColumn vrijemeDo;
         private DataGridViewCheckBoxColumn odradjenaSmjena;
+        private Button button1;
+        private Button button2;
     }
 }
