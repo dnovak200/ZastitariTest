@@ -3,6 +3,7 @@ namespace ZastitariTest
     public partial class Form1 : Form
     {
         FormOsobeDodaj formOsobeDodaj;
+        FormProjektiRaspored formProjektiRaspored;
 
         public Form1()
         {
@@ -137,7 +138,7 @@ namespace ZastitariTest
 
         private void btnOsobeDodaj_Click(object sender, EventArgs e)
         {
-            if(formOsobeDodaj == null) 
+            if (formOsobeDodaj == null)
             {
                 formOsobeDodaj = new FormOsobeDodaj();
                 formOsobeDodaj.FormClosing += FormOsobeDodaj_FormClosing;
@@ -145,8 +146,8 @@ namespace ZastitariTest
                 formOsobeDodaj.Show();
                 formOsobeDodaj.Dock = DockStyle.Fill;
             }
-            else 
-            {  
+            else
+            {
                 formOsobeDodaj.Activate();
             }
         }
@@ -154,6 +155,27 @@ namespace ZastitariTest
         private void FormOsobeDodaj_FormClosing(object? sender, FormClosingEventArgs e)
         {
             formOsobeDodaj = null;
+        }
+
+        private void btnProjektiRaspored_Click(object sender, EventArgs e)
+        {
+            if (formProjektiRaspored == null)
+            {
+                formProjektiRaspored = new FormProjektiRaspored();
+                formProjektiRaspored.FormClosing += FormProjektiRaspored_FormClosing;
+                formProjektiRaspored.MdiParent = this;
+                formProjektiRaspored.Show();
+                formProjektiRaspored.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                formProjektiRaspored.Activate();
+            }
+        }
+
+        private void FormProjektiRaspored_FormClosing(object? sender, FormClosingEventArgs e)
+        {
+            formProjektiRaspored = null;
         }
     }
 }

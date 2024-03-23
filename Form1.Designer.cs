@@ -136,7 +136,7 @@ namespace ZastitariTest
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1223, 39);
+            panel1.Size = new Size(1310, 39);
             panel1.TabIndex = 19;
             // 
             // label1
@@ -260,7 +260,7 @@ namespace ZastitariTest
             projektiContainer.Location = new Point(0, 35);
             projektiContainer.Margin = new Padding(0);
             projektiContainer.Name = "projektiContainer";
-            projektiContainer.Size = new Size(180, 35);
+            projektiContainer.Size = new Size(180, 175);
             projektiContainer.TabIndex = 23;
             // 
             // btnProjekti
@@ -320,6 +320,7 @@ namespace ZastitariTest
             btnProjektiRaspored.Text = "            Raspored";
             btnProjektiRaspored.TextAlign = ContentAlignment.MiddleLeft;
             btnProjektiRaspored.UseVisualStyleBackColor = false;
+            btnProjektiRaspored.Click += btnProjektiRaspored_Click;
             // 
             // btnProjektiExport
             // 
@@ -367,7 +368,7 @@ namespace ZastitariTest
             osobeContainer.Controls.Add(btnOsobeRaspored);
             osobeContainer.Controls.Add(btnOsobeExport);
             osobeContainer.Controls.Add(btnOsobeImport);
-            osobeContainer.Location = new Point(0, 70);
+            osobeContainer.Location = new Point(0, 210);
             osobeContainer.Margin = new Padding(0);
             osobeContainer.Name = "osobeContainer";
             osobeContainer.Size = new Size(180, 176);
@@ -459,7 +460,7 @@ namespace ZastitariTest
             btnPostavke.ForeColor = Color.Black;
             btnPostavke.Image = (Image)resources.GetObject("btnPostavke.Image");
             btnPostavke.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPostavke.Location = new Point(0, 246);
+            btnPostavke.Location = new Point(0, 386);
             btnPostavke.Margin = new Padding(0);
             btnPostavke.Name = "btnPostavke";
             btnPostavke.Padding = new Padding(10, 0, 0, 0);
@@ -478,7 +479,7 @@ namespace ZastitariTest
             btnInfo.ForeColor = Color.Black;
             btnInfo.Image = (Image)resources.GetObject("btnInfo.Image");
             btnInfo.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInfo.Location = new Point(0, 281);
+            btnInfo.Location = new Point(0, 421);
             btnInfo.Margin = new Padding(0);
             btnInfo.Name = "btnInfo";
             btnInfo.Padding = new Padding(10, 0, 0, 0);
@@ -497,7 +498,7 @@ namespace ZastitariTest
             btnIzlaz.ForeColor = Color.Black;
             btnIzlaz.Image = (Image)resources.GetObject("btnIzlaz.Image");
             btnIzlaz.ImageAlign = ContentAlignment.MiddleLeft;
-            btnIzlaz.Location = new Point(0, 316);
+            btnIzlaz.Location = new Point(0, 456);
             btnIzlaz.Margin = new Padding(0);
             btnIzlaz.Name = "btnIzlaz";
             btnIzlaz.Padding = new Padding(10, 0, 0, 0);
@@ -530,7 +531,7 @@ namespace ZastitariTest
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1223, 695);
+            ClientSize = new Size(1310, 695);
             Controls.Add(sideBar);
             Controls.Add(panel1);
             Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
