@@ -28,66 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            panel1 = new Panel();
-            button2 = new Button();
-            button1 = new Button();
+            DataGridViewCellStyle dataGridViewCellStyle13 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle14 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle15 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle16 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle17 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle18 = new DataGridViewCellStyle();
+            pnlHeader = new Panel();
+            comboBoxProjekti = new ComboBox();
+            lblProjektiNaziv = new Label();
+            btnPrihvati = new Button();
             dateTimePicker1 = new DateTimePicker();
             lblDatum = new Label();
-            comboBox1 = new ComboBox();
-            lblProjektiNaziv = new Label();
-            panel2 = new Panel();
+            comboBoxPartneri = new ComboBox();
+            lblPartneriNaziv = new Label();
+            btnUpisi = new Button();
+            pnlFooter = new Panel();
             dataGridView1 = new DataGridView();
-            osobaSifra = new DataGridViewTextBoxColumn();
-            osobaNaziv = new DataGridViewComboBoxColumn();
-            smjena = new DataGridViewComboBoxColumn();
-            vrijemeOd = new DataGridViewTextBoxColumn();
-            vrijemeDo = new DataGridViewTextBoxColumn();
-            odradjenaSmjena = new DataGridViewCheckBoxColumn();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewComboBoxColumn1 = new DataGridViewComboBoxColumn();
+            dataGridViewComboBoxColumn2 = new DataGridViewComboBoxColumn();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            dataGridViewCheckBoxColumn1 = new DataGridViewCheckBoxColumn();
+            pnlHeader.SuspendLayout();
+            pnlFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // panel1
+            // pnlHeader
             // 
-            panel1.BackColor = Color.FromArgb(217, 235, 228);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(dateTimePicker1);
-            panel1.Controls.Add(lblDatum);
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(lblProjektiNaziv);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1115, 67);
-            panel1.TabIndex = 0;
+            pnlHeader.BackColor = Color.FromArgb(217, 235, 228);
+            pnlHeader.Controls.Add(comboBoxProjekti);
+            pnlHeader.Controls.Add(lblProjektiNaziv);
+            pnlHeader.Controls.Add(btnPrihvati);
+            pnlHeader.Controls.Add(dateTimePicker1);
+            pnlHeader.Controls.Add(lblDatum);
+            pnlHeader.Controls.Add(comboBoxPartneri);
+            pnlHeader.Controls.Add(lblPartneriNaziv);
+            pnlHeader.Dock = DockStyle.Top;
+            pnlHeader.Location = new Point(0, 0);
+            pnlHeader.Name = "pnlHeader";
+            pnlHeader.Size = new Size(1115, 93);
+            pnlHeader.TabIndex = 0;
             // 
-            // button2
+            // comboBoxProjekti
             // 
-            button2.BackColor = Color.FromArgb(142, 195, 176);
-            button2.Location = new Point(998, 12);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 33);
-            button2.TabIndex = 27;
-            button2.Text = "Odustani";
-            button2.UseVisualStyleBackColor = false;
+            comboBoxProjekti.FormattingEnabled = true;
+            comboBoxProjekti.Items.AddRange(new object[] { "Poslovna zgrada 1.", "Poslovna zgrada 2.", "Poslovna zgrada 3.", "Skladište 1.", "Skladište 2.", "Skladište 3." });
+            comboBoxProjekti.Location = new Point(90, 47);
+            comboBoxProjekti.Name = "comboBoxProjekti";
+            comboBoxProjekti.Size = new Size(278, 28);
+            comboBoxProjekti.TabIndex = 28;
             // 
-            // button1
+            // lblProjektiNaziv
             // 
-            button1.BackColor = Color.FromArgb(142, 195, 176);
-            button1.Location = new Point(885, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 33);
-            button1.TabIndex = 26;
-            button1.Text = "Prihvati";
-            button1.UseVisualStyleBackColor = false;
+            lblProjektiNaziv.AutoSize = true;
+            lblProjektiNaziv.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+            lblProjektiNaziv.ForeColor = Color.Black;
+            lblProjektiNaziv.Location = new Point(11, 51);
+            lblProjektiNaziv.Name = "lblProjektiNaziv";
+            lblProjektiNaziv.Size = new Size(57, 20);
+            lblProjektiNaziv.TabIndex = 27;
+            lblProjektiNaziv.Text = "Projekt:";
+            // 
+            // btnPrihvati
+            // 
+            btnPrihvati.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnPrihvati.BackColor = Color.FromArgb(142, 195, 176);
+            btnPrihvati.Location = new Point(975, 13);
+            btnPrihvati.Name = "btnPrihvati";
+            btnPrihvati.Size = new Size(94, 33);
+            btnPrihvati.TabIndex = 26;
+            btnPrihvati.Text = "Prihvati";
+            btnPrihvati.UseVisualStyleBackColor = false;
             // 
             // dateTimePicker1
             // 
@@ -107,147 +121,161 @@
             lblDatum.TabIndex = 3;
             lblDatum.Text = "Raspored za datum:";
             // 
-            // comboBox1
+            // comboBoxPartneri
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Poslovna zgrada 1.", "Poslovna zgrada 2.", "Poslovna zgrada 3.", "Skladište 1.", "Skladište 2.", "Skladište 3." });
-            comboBox1.Location = new Point(90, 13);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(278, 28);
-            comboBox1.TabIndex = 2;
+            comboBoxPartneri.FormattingEnabled = true;
+            comboBoxPartneri.Items.AddRange(new object[] { "Partner 1.", "Partner 2.", "Partner 3.", "Partner 4." });
+            comboBoxPartneri.Location = new Point(90, 13);
+            comboBoxPartneri.Name = "comboBoxPartneri";
+            comboBoxPartneri.Size = new Size(278, 28);
+            comboBoxPartneri.TabIndex = 2;
             // 
-            // lblProjektiNaziv
+            // lblPartneriNaziv
             // 
-            lblProjektiNaziv.AutoSize = true;
-            lblProjektiNaziv.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            lblProjektiNaziv.ForeColor = Color.Black;
-            lblProjektiNaziv.Location = new Point(11, 17);
-            lblProjektiNaziv.Name = "lblProjektiNaziv";
-            lblProjektiNaziv.Size = new Size(57, 20);
-            lblProjektiNaziv.TabIndex = 0;
-            lblProjektiNaziv.Text = "Projekt:";
+            lblPartneriNaziv.AutoSize = true;
+            lblPartneriNaziv.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+            lblPartneriNaziv.ForeColor = Color.Black;
+            lblPartneriNaziv.Location = new Point(11, 17);
+            lblPartneriNaziv.Name = "lblPartneriNaziv";
+            lblPartneriNaziv.Size = new Size(59, 20);
+            lblPartneriNaziv.TabIndex = 0;
+            lblPartneriNaziv.Text = "Partner:";
             // 
-            // panel2
+            // btnUpisi
             // 
-            panel2.BackColor = Color.FromArgb(217, 235, 228);
-            panel2.Controls.Add(dataGridView1);
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 67);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1115, 523);
-            panel2.TabIndex = 1;
+            btnUpisi.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnUpisi.BackColor = Color.FromArgb(142, 195, 176);
+            btnUpisi.Location = new Point(975, 9);
+            btnUpisi.Name = "btnUpisi";
+            btnUpisi.Size = new Size(94, 33);
+            btnUpisi.TabIndex = 27;
+            btnUpisi.Text = "Upiši";
+            btnUpisi.UseVisualStyleBackColor = false;
+            // 
+            // pnlFooter
+            // 
+            pnlFooter.BackColor = Color.FromArgb(217, 235, 228);
+            pnlFooter.Controls.Add(btnUpisi);
+            pnlFooter.Dock = DockStyle.Bottom;
+            pnlFooter.Location = new Point(0, 493);
+            pnlFooter.Name = "pnlFooter";
+            pnlFooter.Size = new Size(1115, 54);
+            pnlFooter.TabIndex = 1;
             // 
             // dataGridView1
             // 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { osobaSifra, osobaNaziv, smjena, vrijemeOd, vrijemeDo, odradjenaSmjena });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewComboBoxColumn1, dataGridViewComboBoxColumn2, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewCheckBoxColumn1 });
             dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
+            dataGridView1.Location = new Point(0, 93);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1115, 523);
-            dataGridView1.TabIndex = 0;
+            dataGridView1.Size = new Size(1115, 400);
+            dataGridView1.TabIndex = 1;
             // 
-            // osobaSifra
+            // dataGridViewTextBoxColumn1
             // 
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = Color.Black;
-            osobaSifra.DefaultCellStyle = dataGridViewCellStyle1;
-            osobaSifra.HeaderText = "Šifra Osobe";
-            osobaSifra.MinimumWidth = 90;
-            osobaSifra.Name = "osobaSifra";
+            dataGridViewCellStyle13.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle13.ForeColor = Color.Black;
+            dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewTextBoxColumn1.HeaderText = "Šifra Osobe";
+            dataGridViewTextBoxColumn1.MinimumWidth = 90;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
-            // osobaNaziv
+            // dataGridViewComboBoxColumn1
             // 
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle2.ForeColor = Color.Black;
-            osobaNaziv.DefaultCellStyle = dataGridViewCellStyle2;
-            osobaNaziv.HeaderText = "Djelatnik";
-            osobaNaziv.Items.AddRange(new object[] { "Djelatnik 1.", "Djelatnik 2.", "Djelatnik 3.", "Djelatnik 4", "Djelatnik 5.", "Djelatnik 6." });
-            osobaNaziv.MinimumWidth = 350;
-            osobaNaziv.Name = "osobaNaziv";
-            osobaNaziv.Resizable = DataGridViewTriState.True;
-            osobaNaziv.SortMode = DataGridViewColumnSortMode.Automatic;
+            dataGridViewCellStyle14.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle14.ForeColor = Color.Black;
+            dataGridViewComboBoxColumn1.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewComboBoxColumn1.HeaderText = "Djelatnik";
+            dataGridViewComboBoxColumn1.Items.AddRange(new object[] { "Djelatnik 1.", "Djelatnik 2.", "Djelatnik 3.", "Djelatnik 4", "Djelatnik 5.", "Djelatnik 6." });
+            dataGridViewComboBoxColumn1.MinimumWidth = 350;
+            dataGridViewComboBoxColumn1.Name = "dataGridViewComboBoxColumn1";
+            dataGridViewComboBoxColumn1.Resizable = DataGridViewTriState.True;
+            dataGridViewComboBoxColumn1.SortMode = DataGridViewColumnSortMode.Automatic;
             // 
-            // smjena
+            // dataGridViewComboBoxColumn2
             // 
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle3.ForeColor = Color.Black;
-            smjena.DefaultCellStyle = dataGridViewCellStyle3;
-            smjena.HeaderText = "Smjena";
-            smjena.Items.AddRange(new object[] { "1. smjena", "2. smjena", "3. smjena" });
-            smjena.MinimumWidth = 150;
-            smjena.Name = "smjena";
-            smjena.Resizable = DataGridViewTriState.True;
-            smjena.SortMode = DataGridViewColumnSortMode.Automatic;
+            dataGridViewCellStyle15.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle15.ForeColor = Color.Black;
+            dataGridViewComboBoxColumn2.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewComboBoxColumn2.HeaderText = "Smjena";
+            dataGridViewComboBoxColumn2.Items.AddRange(new object[] { "1. smjena", "2. smjena", "3. smjena" });
+            dataGridViewComboBoxColumn2.MinimumWidth = 150;
+            dataGridViewComboBoxColumn2.Name = "dataGridViewComboBoxColumn2";
+            dataGridViewComboBoxColumn2.Resizable = DataGridViewTriState.True;
+            dataGridViewComboBoxColumn2.SortMode = DataGridViewColumnSortMode.Automatic;
             // 
-            // vrijemeOd
+            // dataGridViewTextBoxColumn2
             // 
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle4.ForeColor = Color.Black;
-            vrijemeOd.DefaultCellStyle = dataGridViewCellStyle4;
-            vrijemeOd.HeaderText = "Od";
-            vrijemeOd.MinimumWidth = 80;
-            vrijemeOd.Name = "vrijemeOd";
+            dataGridViewCellStyle16.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle16.ForeColor = Color.Black;
+            dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewTextBoxColumn2.HeaderText = "Od";
+            dataGridViewTextBoxColumn2.MinimumWidth = 80;
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
-            // vrijemeDo
+            // dataGridViewTextBoxColumn3
             // 
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle5.ForeColor = Color.Black;
-            vrijemeDo.DefaultCellStyle = dataGridViewCellStyle5;
-            vrijemeDo.HeaderText = "Do";
-            vrijemeDo.MinimumWidth = 80;
-            vrijemeDo.Name = "vrijemeDo";
+            dataGridViewCellStyle17.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle17.ForeColor = Color.Black;
+            dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewTextBoxColumn3.HeaderText = "Do";
+            dataGridViewTextBoxColumn3.MinimumWidth = 80;
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
-            // odradjenaSmjena
+            // dataGridViewCheckBoxColumn1
             // 
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle6.ForeColor = Color.Black;
-            dataGridViewCellStyle6.NullValue = false;
-            odradjenaSmjena.DefaultCellStyle = dataGridViewCellStyle6;
-            odradjenaSmjena.HeaderText = "Odrađeno";
-            odradjenaSmjena.MinimumWidth = 100;
-            odradjenaSmjena.Name = "odradjenaSmjena";
-            odradjenaSmjena.Resizable = DataGridViewTriState.True;
-            odradjenaSmjena.SortMode = DataGridViewColumnSortMode.Automatic;
+            dataGridViewCellStyle18.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle18.ForeColor = Color.Black;
+            dataGridViewCellStyle18.NullValue = false;
+            dataGridViewCheckBoxColumn1.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCheckBoxColumn1.HeaderText = "Odrađeno";
+            dataGridViewCheckBoxColumn1.MinimumWidth = 100;
+            dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            dataGridViewCheckBoxColumn1.Resizable = DataGridViewTriState.True;
+            dataGridViewCheckBoxColumn1.SortMode = DataGridViewColumnSortMode.Automatic;
             // 
             // FormProjektiRaspored
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1115, 589);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
+            ClientSize = new Size(1115, 547);
+            Controls.Add(dataGridView1);
+            Controls.Add(pnlFooter);
+            Controls.Add(pnlHeader);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormProjektiRaspored";
             Text = "FormProjektiRaspored";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            panel2.ResumeLayout(false);
+            pnlHeader.ResumeLayout(false);
+            pnlHeader.PerformLayout();
+            pnlFooter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
-        private Label lblProjektiNaziv;
+        private Panel pnlHeader;
+        private Label lblPartneriNaziv;
         private Label lblDatum;
-        private ComboBox comboBox1;
+        private ComboBox comboBoxPartneri;
         private DateTimePicker dateTimePicker1;
-        private Panel panel2;
+        private Button btnPrihvati;
+        private Button btnUpisi;
+        private Panel pnlFooter;
+        private ComboBox comboBoxProjekti;
+        private Label lblProjektiNaziv;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn osobaSifra;
-        private DataGridViewComboBoxColumn osobaNaziv;
-        private DataGridViewComboBoxColumn smjena;
-        private DataGridViewTextBoxColumn vrijemeOd;
-        private DataGridViewTextBoxColumn vrijemeDo;
-        private DataGridViewCheckBoxColumn odradjenaSmjena;
-        private Button button1;
-        private Button button2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewComboBoxColumn dataGridViewComboBoxColumn1;
+        private DataGridViewComboBoxColumn dataGridViewComboBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
     }
 }

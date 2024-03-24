@@ -40,7 +40,7 @@ namespace ZastitariTest
             sideBar = new FlowLayoutPanel();
             partneriContainer = new FlowLayoutPanel();
             btnPartneriDodaj = new Button();
-            btnPartneriRaspored = new Button();
+            btnPartneriPregled = new Button();
             btnPartneriExport = new Button();
             projektiContainer = new FlowLayoutPanel();
             btnProjekti = new Button();
@@ -60,6 +60,7 @@ namespace ZastitariTest
             projektiTransition = new System.Windows.Forms.Timer(components);
             osobeTransition = new System.Windows.Forms.Timer(components);
             sidebarTransition = new System.Windows.Forms.Timer(components);
+            button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnMenu).BeginInit();
             sideBar.SuspendLayout();
@@ -103,7 +104,7 @@ namespace ZastitariTest
             btnOsobe.Padding = new Padding(10, 0, 0, 0);
             btnOsobe.Size = new Size(180, 35);
             btnOsobe.TabIndex = 6;
-            btnOsobe.Text = "           Osobe";
+            btnOsobe.Text = "           Djelatnici";
             btnOsobe.TextAlign = ContentAlignment.MiddleLeft;
             btnOsobe.UseVisualStyleBackColor = false;
             btnOsobe.Click += btnOsobe_Click;
@@ -183,13 +184,13 @@ namespace ZastitariTest
             partneriContainer.BackColor = Color.FromArgb(142, 195, 176);
             partneriContainer.Controls.Add(btnPartneri);
             partneriContainer.Controls.Add(btnPartneriDodaj);
-            partneriContainer.Controls.Add(btnPartneriRaspored);
+            partneriContainer.Controls.Add(btnPartneriPregled);
             partneriContainer.Controls.Add(btnPartneriExport);
             partneriContainer.Controls.Add(btnPartneriImport);
             partneriContainer.Location = new Point(0, 0);
             partneriContainer.Margin = new Padding(0);
             partneriContainer.Name = "partneriContainer";
-            partneriContainer.Size = new Size(180, 35);
+            partneriContainer.Size = new Size(180, 175);
             partneriContainer.TabIndex = 21;
             // 
             // btnPartneriDodaj
@@ -211,24 +212,24 @@ namespace ZastitariTest
             btnPartneriDodaj.TextAlign = ContentAlignment.MiddleLeft;
             btnPartneriDodaj.UseVisualStyleBackColor = false;
             // 
-            // btnPartneriRaspored
+            // btnPartneriPregled
             // 
-            btnPartneriRaspored.BackColor = Color.FromArgb(188, 234, 213);
-            btnPartneriRaspored.FlatAppearance.BorderSize = 0;
-            btnPartneriRaspored.FlatStyle = FlatStyle.Flat;
-            btnPartneriRaspored.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            btnPartneriRaspored.ForeColor = Color.Black;
-            btnPartneriRaspored.Image = (Image)resources.GetObject("btnPartneriRaspored.Image");
-            btnPartneriRaspored.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPartneriRaspored.Location = new Point(0, 70);
-            btnPartneriRaspored.Margin = new Padding(0);
-            btnPartneriRaspored.Name = "btnPartneriRaspored";
-            btnPartneriRaspored.Padding = new Padding(10, 0, 0, 0);
-            btnPartneriRaspored.Size = new Size(180, 35);
-            btnPartneriRaspored.TabIndex = 2;
-            btnPartneriRaspored.Text = "            Raspored";
-            btnPartneriRaspored.TextAlign = ContentAlignment.MiddleLeft;
-            btnPartneriRaspored.UseVisualStyleBackColor = false;
+            btnPartneriPregled.BackColor = Color.FromArgb(188, 234, 213);
+            btnPartneriPregled.FlatAppearance.BorderSize = 0;
+            btnPartneriPregled.FlatStyle = FlatStyle.Flat;
+            btnPartneriPregled.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnPartneriPregled.ForeColor = Color.Black;
+            btnPartneriPregled.Image = (Image)resources.GetObject("btnPartneriPregled.Image");
+            btnPartneriPregled.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPartneriPregled.Location = new Point(0, 70);
+            btnPartneriPregled.Margin = new Padding(0);
+            btnPartneriPregled.Name = "btnPartneriPregled";
+            btnPartneriPregled.Padding = new Padding(10, 0, 0, 0);
+            btnPartneriPregled.Size = new Size(180, 35);
+            btnPartneriPregled.TabIndex = 2;
+            btnPartneriPregled.Text = "            Pregled";
+            btnPartneriPregled.TextAlign = ContentAlignment.MiddleLeft;
+            btnPartneriPregled.UseVisualStyleBackColor = false;
             // 
             // btnPartneriExport
             // 
@@ -254,13 +255,14 @@ namespace ZastitariTest
             projektiContainer.BackColor = Color.FromArgb(142, 195, 176);
             projektiContainer.Controls.Add(btnProjekti);
             projektiContainer.Controls.Add(btnProjektiDodaj);
+            projektiContainer.Controls.Add(button1);
             projektiContainer.Controls.Add(btnProjektiRaspored);
             projektiContainer.Controls.Add(btnProjektiExport);
             projektiContainer.Controls.Add(btnProjektiImport);
-            projektiContainer.Location = new Point(0, 35);
+            projektiContainer.Location = new Point(0, 175);
             projektiContainer.Margin = new Padding(0);
             projektiContainer.Name = "projektiContainer";
-            projektiContainer.Size = new Size(180, 175);
+            projektiContainer.Size = new Size(180, 210);
             projektiContainer.TabIndex = 23;
             // 
             // btnProjekti
@@ -311,7 +313,7 @@ namespace ZastitariTest
             btnProjektiRaspored.ForeColor = Color.Black;
             btnProjektiRaspored.Image = (Image)resources.GetObject("btnProjektiRaspored.Image");
             btnProjektiRaspored.ImageAlign = ContentAlignment.MiddleLeft;
-            btnProjektiRaspored.Location = new Point(0, 70);
+            btnProjektiRaspored.Location = new Point(0, 105);
             btnProjektiRaspored.Margin = new Padding(0);
             btnProjektiRaspored.Name = "btnProjektiRaspored";
             btnProjektiRaspored.Padding = new Padding(10, 0, 0, 0);
@@ -331,7 +333,7 @@ namespace ZastitariTest
             btnProjektiExport.ForeColor = Color.Black;
             btnProjektiExport.Image = (Image)resources.GetObject("btnProjektiExport.Image");
             btnProjektiExport.ImageAlign = ContentAlignment.MiddleLeft;
-            btnProjektiExport.Location = new Point(0, 105);
+            btnProjektiExport.Location = new Point(0, 140);
             btnProjektiExport.Margin = new Padding(0);
             btnProjektiExport.Name = "btnProjektiExport";
             btnProjektiExport.Padding = new Padding(10, 0, 0, 0);
@@ -350,7 +352,7 @@ namespace ZastitariTest
             btnProjektiImport.ForeColor = Color.Black;
             btnProjektiImport.Image = (Image)resources.GetObject("btnProjektiImport.Image");
             btnProjektiImport.ImageAlign = ContentAlignment.MiddleLeft;
-            btnProjektiImport.Location = new Point(0, 140);
+            btnProjektiImport.Location = new Point(0, 175);
             btnProjektiImport.Margin = new Padding(0);
             btnProjektiImport.Name = "btnProjektiImport";
             btnProjektiImport.Padding = new Padding(10, 0, 0, 0);
@@ -368,7 +370,7 @@ namespace ZastitariTest
             osobeContainer.Controls.Add(btnOsobeRaspored);
             osobeContainer.Controls.Add(btnOsobeExport);
             osobeContainer.Controls.Add(btnOsobeImport);
-            osobeContainer.Location = new Point(0, 210);
+            osobeContainer.Location = new Point(0, 385);
             osobeContainer.Margin = new Padding(0);
             osobeContainer.Name = "osobeContainer";
             osobeContainer.Size = new Size(180, 176);
@@ -409,7 +411,7 @@ namespace ZastitariTest
             btnOsobeRaspored.Padding = new Padding(10, 0, 0, 0);
             btnOsobeRaspored.Size = new Size(180, 35);
             btnOsobeRaspored.TabIndex = 2;
-            btnOsobeRaspored.Text = "            Raspored";
+            btnOsobeRaspored.Text = "            Pregled";
             btnOsobeRaspored.TextAlign = ContentAlignment.MiddleLeft;
             btnOsobeRaspored.UseVisualStyleBackColor = false;
             // 
@@ -460,7 +462,7 @@ namespace ZastitariTest
             btnPostavke.ForeColor = Color.Black;
             btnPostavke.Image = (Image)resources.GetObject("btnPostavke.Image");
             btnPostavke.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPostavke.Location = new Point(0, 386);
+            btnPostavke.Location = new Point(0, 561);
             btnPostavke.Margin = new Padding(0);
             btnPostavke.Name = "btnPostavke";
             btnPostavke.Padding = new Padding(10, 0, 0, 0);
@@ -479,7 +481,7 @@ namespace ZastitariTest
             btnInfo.ForeColor = Color.Black;
             btnInfo.Image = (Image)resources.GetObject("btnInfo.Image");
             btnInfo.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInfo.Location = new Point(0, 421);
+            btnInfo.Location = new Point(0, 596);
             btnInfo.Margin = new Padding(0);
             btnInfo.Name = "btnInfo";
             btnInfo.Padding = new Padding(10, 0, 0, 0);
@@ -498,7 +500,7 @@ namespace ZastitariTest
             btnIzlaz.ForeColor = Color.Black;
             btnIzlaz.Image = (Image)resources.GetObject("btnIzlaz.Image");
             btnIzlaz.ImageAlign = ContentAlignment.MiddleLeft;
-            btnIzlaz.Location = new Point(0, 456);
+            btnIzlaz.Location = new Point(0, 631);
             btnIzlaz.Margin = new Padding(0);
             btnIzlaz.Name = "btnIzlaz";
             btnIzlaz.Padding = new Padding(10, 0, 0, 0);
@@ -527,6 +529,25 @@ namespace ZastitariTest
             // 
             sidebarTransition.Interval = 5;
             sidebarTransition.Tick += sidebarTransition_Tick;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(188, 234, 213);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.Black;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(0, 70);
+            button1.Margin = new Padding(0);
+            button1.Name = "button1";
+            button1.Padding = new Padding(10, 0, 0, 0);
+            button1.Size = new Size(180, 35);
+            button1.TabIndex = 22;
+            button1.Text = "            Pregled";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -560,7 +581,7 @@ namespace ZastitariTest
         private FlowLayoutPanel sideBar;
         private FlowLayoutPanel partneriContainer;
         private Button btnPartneriDodaj;
-        private Button btnPartneriRaspored;
+        private Button btnPartneriPregled;
         private Button btnPartneriExport;
         private Button btnProjekti;
         private FlowLayoutPanel projektiContainer;
@@ -580,5 +601,6 @@ namespace ZastitariTest
         private System.Windows.Forms.Timer projektiTransition;
         private System.Windows.Forms.Timer osobeTransition;
         private System.Windows.Forms.Timer sidebarTransition;
+        private Button button1;
     }
 }

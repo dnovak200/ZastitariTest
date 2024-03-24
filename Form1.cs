@@ -51,7 +51,7 @@ namespace ZastitariTest
             if (projektiExpand == false)
             {
                 projektiContainer.Height += 8;
-                if (projektiContainer.Height >= 176)
+                if (projektiContainer.Height >= 211)
                 {
                     projektiTransition.Stop();
                     projektiExpand = true;

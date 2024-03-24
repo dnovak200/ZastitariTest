@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            textBox1 = new TextBox();
-            label2 = new Label();
+            txtSifra = new TextBox();
+            lblSifra = new Label();
             label3 = new Label();
-            label4 = new Label();
-            textBox2 = new TextBox();
+            lblPrezime = new Label();
+            txtPrezime = new TextBox();
             textBox3 = new TextBox();
             label5 = new Label();
             textBox4 = new TextBox();
@@ -52,133 +51,119 @@
             label12 = new Label();
             button1 = new Button();
             button2 = new Button();
+            label1 = new Label();
+            textBox9 = new TextBox();
             SuspendLayout();
             // 
-            // label1
+            // txtSifra
             // 
-            label1.AutoSize = true;
-            label1.BackColor = SystemColors.Control;
-            label1.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(492, 7);
-            label1.Name = "label1";
-            label1.Size = new Size(178, 28);
-            label1.TabIndex = 0;
-            label1.Text = "FormaOsobeDodaj";
+            txtSifra.Location = new Point(82, 29);
+            txtSifra.Name = "txtSifra";
+            txtSifra.Size = new Size(125, 27);
+            txtSifra.TabIndex = 1;
             // 
-            // textBox1
+            // lblSifra
             // 
-            textBox1.Location = new Point(72, 22);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(110, 23);
-            textBox1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            label2.Location = new Point(24, 25);
-            label2.Name = "label2";
-            label2.Size = new Size(34, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Šifra:";
+            lblSifra.AutoSize = true;
+            lblSifra.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+            lblSifra.Location = new Point(27, 33);
+            lblSifra.Name = "lblSifra";
+            lblSifra.Size = new Size(40, 20);
+            lblSifra.TabIndex = 2;
+            lblSifra.Text = "Šifra:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(10, 54);
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label3.Location = new Point(11, 67);
             label3.Name = "label3";
-            label3.Size = new Size(53, 15);
+            label3.Size = new Size(74, 20);
             label3.TabIndex = 3;
             label3.Text = "Djelatnik";
             // 
-            // label4
+            // lblPrezime
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            label4.Location = new Point(10, 92);
-            label4.Name = "label4";
-            label4.Size = new Size(51, 15);
-            label4.TabIndex = 4;
-            label4.Text = "Prezime:";
+            lblPrezime.AutoSize = true;
+            lblPrezime.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+            lblPrezime.Location = new Point(11, 99);
+            lblPrezime.Name = "lblPrezime";
+            lblPrezime.Size = new Size(64, 20);
+            lblPrezime.TabIndex = 4;
+            lblPrezime.Text = "Prezime:";
             // 
-            // textBox2
+            // txtPrezime
             // 
-            textBox2.Location = new Point(111, 89);
-            textBox2.Margin = new Padding(3, 2, 3, 2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(110, 23);
-            textBox2.TabIndex = 5;
+            txtPrezime.Location = new Point(127, 95);
+            txtPrezime.Name = "txtPrezime";
+            txtPrezime.Size = new Size(125, 27);
+            txtPrezime.TabIndex = 5;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(111, 114);
-            textBox3.Margin = new Padding(3, 2, 3, 2);
+            textBox3.Location = new Point(127, 128);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(110, 23);
+            textBox3.Size = new Size(125, 27);
             textBox3.TabIndex = 7;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            label5.Location = new Point(10, 116);
+            label5.Location = new Point(11, 131);
             label5.Name = "label5";
-            label5.Size = new Size(29, 15);
+            label5.Size = new Size(36, 20);
             label5.TabIndex = 6;
             label5.Text = "Ime:";
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(111, 183);
-            textBox4.Margin = new Padding(3, 2, 3, 2);
+            textBox4.Location = new Point(127, 250);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(288, 23);
+            textBox4.Size = new Size(329, 27);
             textBox4.TabIndex = 9;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            label6.Location = new Point(10, 185);
+            label6.Location = new Point(11, 253);
             label6.Name = "label6";
-            label6.Size = new Size(47, 15);
+            label6.Size = new Size(55, 20);
             label6.TabIndex = 8;
             label6.Text = "Adresa:";
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(111, 208);
-            textBox5.Margin = new Padding(3, 2, 3, 2);
+            textBox5.Location = new Point(127, 283);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(73, 23);
+            textBox5.Size = new Size(83, 27);
             textBox5.TabIndex = 11;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            label7.Location = new Point(10, 210);
+            label7.Location = new Point(11, 286);
             label7.Name = "label7";
-            label7.Size = new Size(83, 15);
+            label7.Size = new Size(102, 20);
             label7.TabIndex = 10;
             label7.Text = "Poštanski broj:";
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(243, 208);
-            textBox6.Margin = new Padding(3, 2, 3, 2);
+            textBox6.Location = new Point(278, 283);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(154, 23);
+            textBox6.Size = new Size(175, 27);
             textBox6.TabIndex = 13;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            label8.Location = new Point(197, 210);
+            label8.Location = new Point(225, 286);
             label8.Name = "label8";
-            label8.Size = new Size(36, 15);
+            label8.Size = new Size(43, 20);
             label8.TabIndex = 12;
             label8.Text = "Grad:";
             // 
@@ -186,9 +171,9 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            label9.Location = new Point(10, 141);
+            label9.Location = new Point(11, 164);
             label9.Name = "label9";
-            label9.Size = new Size(32, 15);
+            label9.Size = new Size(39, 20);
             label9.TabIndex = 14;
             label9.Text = "Spol:";
             // 
@@ -196,75 +181,70 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "M", "Ž" });
-            comboBox1.Location = new Point(111, 139);
-            comboBox1.Margin = new Padding(3, 2, 3, 2);
+            comboBox1.Location = new Point(127, 161);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(46, 23);
+            comboBox1.Size = new Size(52, 28);
             comboBox1.TabIndex = 18;
             // 
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
             comboBox2.Items.AddRange(new object[] { "1 - Ugovor o radu", "2 - Student", "3 - Ugovor o djelu", "4 - Ugovor sa d.o.o." });
-            comboBox2.Location = new Point(518, 88);
-            comboBox2.Margin = new Padding(3, 2, 3, 2);
+            comboBox2.Location = new Point(592, 117);
             comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(172, 23);
+            comboBox2.Size = new Size(196, 28);
             comboBox2.TabIndex = 20;
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            label10.Location = new Point(420, 91);
+            label10.Location = new Point(480, 121);
             label10.Name = "label10";
-            label10.Size = new Size(72, 15);
+            label10.Size = new Size(88, 20);
             label10.TabIndex = 19;
             label10.Text = "Tip ugovora:";
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(111, 232);
-            textBox7.Margin = new Padding(3, 2, 3, 2);
+            textBox7.Location = new Point(127, 334);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(288, 23);
+            textBox7.Size = new Size(329, 27);
             textBox7.TabIndex = 22;
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            label11.Location = new Point(10, 235);
+            label11.Location = new Point(11, 338);
             label11.Name = "label11";
-            label11.Size = new Size(89, 15);
+            label11.Size = new Size(106, 20);
             label11.TabIndex = 21;
             label11.Text = "Adresa E-pošte:";
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(111, 257);
-            textBox8.Margin = new Padding(3, 2, 3, 2);
+            textBox8.Location = new Point(127, 368);
             textBox8.Name = "textBox8";
-            textBox8.Size = new Size(130, 23);
+            textBox8.Size = new Size(148, 27);
             textBox8.TabIndex = 24;
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            label12.Location = new Point(10, 260);
+            label12.Location = new Point(11, 372);
             label12.Name = "label12";
-            label12.Size = new Size(48, 15);
+            label12.Size = new Size(58, 20);
             label12.TabIndex = 23;
             label12.Text = "Telefon:";
             // 
             // button1
             // 
             button1.BackColor = Color.FromArgb(142, 195, 176);
-            button1.Location = new Point(468, 286);
-            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Location = new Point(535, 381);
             button1.Name = "button1";
-            button1.Size = new Size(82, 25);
+            button1.Size = new Size(94, 33);
             button1.TabIndex = 25;
             button1.Text = "Prihvati";
             button1.UseVisualStyleBackColor = false;
@@ -272,20 +252,38 @@
             // button2
             // 
             button2.BackColor = Color.FromArgb(142, 195, 176);
-            button2.Location = new Point(585, 286);
-            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Location = new Point(669, 381);
             button2.Name = "button2";
-            button2.Size = new Size(82, 25);
+            button2.Size = new Size(94, 33);
             button2.TabIndex = 26;
             button2.Text = "Odustani";
             button2.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+            label1.Location = new Point(11, 204);
+            label1.Name = "label1";
+            label1.Size = new Size(36, 20);
+            label1.TabIndex = 27;
+            label1.Text = "OIB:";
+            // 
+            // textBox9
+            // 
+            textBox9.Location = new Point(127, 197);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(125, 27);
+            textBox9.TabIndex = 28;
+            // 
             // FormOsobeDodaj
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(217, 235, 228);
-            ClientSize = new Size(710, 336);
+            ClientSize = new Size(811, 448);
+            Controls.Add(textBox9);
+            Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox8);
@@ -304,15 +302,13 @@
             Controls.Add(label6);
             Controls.Add(textBox3);
             Controls.Add(label5);
-            Controls.Add(textBox2);
-            Controls.Add(label4);
+            Controls.Add(txtPrezime);
+            Controls.Add(lblPrezime);
             Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
+            Controls.Add(lblSifra);
+            Controls.Add(txtSifra);
             ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "FormOsobeDodaj";
             Text = "FormOsobeDodaj";
             ResumeLayout(false);
@@ -320,13 +316,11 @@
         }
 
         #endregion
-
-        private Label label1;
-        private TextBox textBox1;
-        private Label label2;
+        private TextBox txtSifra;
+        private Label lblSifra;
         private Label label3;
-        private Label label4;
-        private TextBox textBox2;
+        private Label lblPrezime;
+        private TextBox txtPrezime;
         private TextBox textBox3;
         private Label label5;
         private TextBox textBox4;
@@ -345,5 +339,7 @@
         private Label label12;
         private Button button1;
         private Button button2;
+        private Label label1;
+        private TextBox textBox9;
     }
 }
