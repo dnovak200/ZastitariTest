@@ -4,6 +4,10 @@ namespace ZastitariTest
     {
         FormOsobeDodaj formOsobeDodaj;
         FormProjektiRaspored formProjektiRaspored;
+        FormPartneriDodaj formPartneriDodaj;
+        FormProjektiDodaj formProjektiDodaj;
+        FormOsobePregled formOsobePregled;
+
 
         public Form1()
         {
@@ -176,6 +180,71 @@ namespace ZastitariTest
         private void FormProjektiRaspored_FormClosing(object? sender, FormClosingEventArgs e)
         {
             formProjektiRaspored = null;
+        }
+
+        private void btnPartneriDodaj_Click(object sender, EventArgs e)
+        {
+            if (formPartneriDodaj == null)
+            {
+                formPartneriDodaj = new FormPartneriDodaj();
+                formPartneriDodaj.FormClosing += FormPartneriDodaj_FormClosing;
+                formPartneriDodaj.MdiParent = this;
+                formPartneriDodaj.Show();
+                formPartneriDodaj.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                formPartneriDodaj.Activate();
+            }
+
+        }
+
+        private void FormPartneriDodaj_FormClosing(object? sender, FormClosingEventArgs e)
+        {
+            formPartneriDodaj = null;
+        }
+
+        private void btnProjektiDodaj_Click(object sender, EventArgs e)
+        {
+            if (formProjektiDodaj == null)
+            {
+                formProjektiDodaj = new FormProjektiDodaj();
+                formProjektiDodaj.FormClosing += FormProjektiDodaj_FormClosing;
+                formProjektiDodaj.MdiParent = this;
+                formProjektiDodaj.Show();
+                formProjektiDodaj.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                formProjektiDodaj.Activate();
+            }
+        }
+
+        private void FormProjektiDodaj_FormClosing(object? sender, FormClosingEventArgs e)
+        {
+            formProjektiDodaj = null;
+        }
+
+        private void btnOsobeRaspored_Click(object sender, EventArgs e)
+        {
+            if (formOsobePregled == null)
+            {
+                formOsobePregled = new FormOsobePregled();
+                formOsobePregled.FormClosing += FormOsobePregled_FormClosing;
+                formOsobePregled.MdiParent = this;
+                formOsobePregled.Show();
+                formOsobePregled.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                formOsobePregled.Activate();
+            }
+
+        }
+
+        private void FormOsobePregled_FormClosing(object? sender, FormClosingEventArgs e)
+        {
+            formOsobePregled = null;
         }
     }
 }

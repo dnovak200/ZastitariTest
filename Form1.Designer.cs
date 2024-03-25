@@ -45,6 +45,7 @@ namespace ZastitariTest
             projektiContainer = new FlowLayoutPanel();
             btnProjekti = new Button();
             btnProjektiDodaj = new Button();
+            button1 = new Button();
             btnProjektiRaspored = new Button();
             btnProjektiExport = new Button();
             btnProjektiImport = new Button();
@@ -60,7 +61,6 @@ namespace ZastitariTest
             projektiTransition = new System.Windows.Forms.Timer(components);
             osobeTransition = new System.Windows.Forms.Timer(components);
             sidebarTransition = new System.Windows.Forms.Timer(components);
-            button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnMenu).BeginInit();
             sideBar.SuspendLayout();
@@ -211,6 +211,7 @@ namespace ZastitariTest
             btnPartneriDodaj.Text = "            Dodaj novi";
             btnPartneriDodaj.TextAlign = ContentAlignment.MiddleLeft;
             btnPartneriDodaj.UseVisualStyleBackColor = false;
+            btnPartneriDodaj.Click += btnPartneriDodaj_Click;
             // 
             // btnPartneriPregled
             // 
@@ -303,6 +304,26 @@ namespace ZastitariTest
             btnProjektiDodaj.Text = "            Dodaj novi";
             btnProjektiDodaj.TextAlign = ContentAlignment.MiddleLeft;
             btnProjektiDodaj.UseVisualStyleBackColor = false;
+            btnProjektiDodaj.Click += btnProjektiDodaj_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(188, 234, 213);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.Black;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(0, 70);
+            button1.Margin = new Padding(0);
+            button1.Name = "button1";
+            button1.Padding = new Padding(10, 0, 0, 0);
+            button1.Size = new Size(180, 35);
+            button1.TabIndex = 22;
+            button1.Text = "            Pregled";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = false;
             // 
             // btnProjektiRaspored
             // 
@@ -414,6 +435,7 @@ namespace ZastitariTest
             btnOsobeRaspored.Text = "            Pregled";
             btnOsobeRaspored.TextAlign = ContentAlignment.MiddleLeft;
             btnOsobeRaspored.UseVisualStyleBackColor = false;
+            btnOsobeRaspored.Click += btnOsobeRaspored_Click;
             // 
             // btnOsobeExport
             // 
@@ -530,25 +552,6 @@ namespace ZastitariTest
             sidebarTransition.Interval = 5;
             sidebarTransition.Tick += sidebarTransition_Tick;
             // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(188, 234, 213);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Black;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 70);
-            button1.Margin = new Padding(0);
-            button1.Name = "button1";
-            button1.Padding = new Padding(10, 0, 0, 0);
-            button1.Size = new Size(180, 35);
-            button1.TabIndex = 22;
-            button1.Text = "            Pregled";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -557,6 +560,7 @@ namespace ZastitariTest
             Controls.Add(panel1);
             Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ForeColor = Color.White;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             Name = "Form1";
             Text = "Form1";
