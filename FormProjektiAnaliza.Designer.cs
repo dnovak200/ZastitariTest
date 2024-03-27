@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            comboBox2 = new ComboBox();
+            label3 = new Label();
             btnPrihvati = new Button();
             dateTimePicker2 = new DateTimePicker();
             label2 = new Label();
@@ -56,6 +58,8 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(217, 235, 228);
+            panel1.Controls.Add(comboBox2);
+            panel1.Controls.Add(label3);
             panel1.Controls.Add(btnPrihvati);
             panel1.Controls.Add(dateTimePicker2);
             panel1.Controls.Add(label2);
@@ -72,6 +76,26 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1174, 122);
             panel1.TabIndex = 0;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "1. Smjena", "2. Smjena", "3. Smjena" });
+            comboBox2.Location = new Point(462, 46);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(161, 28);
+            comboBox2.TabIndex = 41;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(383, 50);
+            label3.Name = "label3";
+            label3.Size = new Size(59, 20);
+            label3.TabIndex = 40;
+            label3.Text = "Smjena:";
             // 
             // btnPrihvati
             // 
@@ -106,7 +130,7 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Djelatnik 1", "Djelatnik 2", "Djelatnik 3", "Djelatnik 4", "Djelatnik 5", "Djelatnik 6", "Djelatnik 7" });
-            comboBox1.Location = new Point(460, 46);
+            comboBox1.Location = new Point(462, 13);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(221, 28);
             comboBox1.TabIndex = 36;
@@ -116,7 +140,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(381, 50);
+            label1.Location = new Point(383, 17);
             label1.Name = "label1";
             label1.Size = new Size(70, 20);
             label1.TabIndex = 35;
@@ -191,13 +215,14 @@
             // 
             // dataGridView1
             // 
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
-            dataGridView1.Location = new Point(3, 6);
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1165, 319);
+            dataGridView1.Size = new Size(1174, 328);
             dataGridView1.TabIndex = 0;
             // 
             // Column1
@@ -237,7 +262,7 @@
             // 
             // Column6
             // 
-            Column6.HeaderText = "Napomena";
+            Column6.HeaderText = "Sati";
             Column6.MinimumWidth = 6;
             Column6.Name = "Column6";
             Column6.Width = 150;
@@ -249,6 +274,7 @@
             ClientSize = new Size(1174, 450);
             Controls.Add(panel3);
             Controls.Add(panel1);
+            ForeColor = Color.Black;
             Name = "FormProjektiAnaliza";
             Text = "FormProjektiAnaliza";
             panel1.ResumeLayout(false);
@@ -273,12 +299,14 @@
         private DateTimePicker dateTimePicker2;
         private Label label2;
         private DataGridView dataGridView1;
+        private Button btnPrihvati;
+        private ComboBox comboBox2;
+        private Label label3;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
         private DataGridViewTextBoxColumn Column6;
-        private Button btnPrihvati;
     }
 }

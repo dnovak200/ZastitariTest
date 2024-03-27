@@ -191,7 +191,7 @@ namespace ZastitariTest
             partneriContainer.Location = new Point(0, 0);
             partneriContainer.Margin = new Padding(0);
             partneriContainer.Name = "partneriContainer";
-            partneriContainer.Size = new Size(180, 175);
+            partneriContainer.Size = new Size(180, 35);
             partneriContainer.TabIndex = 21;
             // 
             // btnPartneriDodaj
@@ -263,10 +263,10 @@ namespace ZastitariTest
             projektiContainer.Controls.Add(btnProjektiRaspored);
             projektiContainer.Controls.Add(btnProjektiExport);
             projektiContainer.Controls.Add(btnProjektiImport);
-            projektiContainer.Location = new Point(0, 175);
+            projektiContainer.Location = new Point(0, 35);
             projektiContainer.Margin = new Padding(0);
             projektiContainer.Name = "projektiContainer";
-            projektiContainer.Size = new Size(180, 246);
+            projektiContainer.Size = new Size(180, 35);
             projektiContainer.TabIndex = 23;
             // 
             // btnProjekti
@@ -415,7 +415,7 @@ namespace ZastitariTest
             osobeContainer.Controls.Add(btnOsobeRaspored);
             osobeContainer.Controls.Add(btnOsobeExport);
             osobeContainer.Controls.Add(btnOsobeImport);
-            osobeContainer.Location = new Point(0, 421);
+            osobeContainer.Location = new Point(0, 70);
             osobeContainer.Margin = new Padding(0);
             osobeContainer.Name = "osobeContainer";
             osobeContainer.Size = new Size(180, 35);
@@ -508,7 +508,7 @@ namespace ZastitariTest
             btnPostavke.ForeColor = Color.Black;
             btnPostavke.Image = (Image)resources.GetObject("btnPostavke.Image");
             btnPostavke.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPostavke.Location = new Point(0, 456);
+            btnPostavke.Location = new Point(0, 105);
             btnPostavke.Margin = new Padding(0);
             btnPostavke.Name = "btnPostavke";
             btnPostavke.Padding = new Padding(10, 0, 0, 0);
@@ -527,7 +527,7 @@ namespace ZastitariTest
             btnInfo.ForeColor = Color.Black;
             btnInfo.Image = (Image)resources.GetObject("btnInfo.Image");
             btnInfo.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInfo.Location = new Point(0, 491);
+            btnInfo.Location = new Point(0, 140);
             btnInfo.Margin = new Padding(0);
             btnInfo.Name = "btnInfo";
             btnInfo.Padding = new Padding(10, 0, 0, 0);
@@ -546,7 +546,7 @@ namespace ZastitariTest
             btnIzlaz.ForeColor = Color.Black;
             btnIzlaz.Image = (Image)resources.GetObject("btnIzlaz.Image");
             btnIzlaz.ImageAlign = ContentAlignment.MiddleLeft;
-            btnIzlaz.Location = new Point(0, 526);
+            btnIzlaz.Location = new Point(0, 175);
             btnIzlaz.Margin = new Padding(0);
             btnIzlaz.Name = "btnIzlaz";
             btnIzlaz.Padding = new Padding(10, 0, 0, 0);
