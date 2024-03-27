@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
@@ -48,16 +47,9 @@
             label12 = new Label();
             textBox7 = new TextBox();
             label11 = new Label();
+            label1 = new Label();
+            textBox9 = new TextBox();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(646, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(142, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Form Partneri Dodaj";
             // 
             // label2
             // 
@@ -182,7 +174,7 @@
             // 
             button2.BackColor = Color.FromArgb(142, 195, 176);
             button2.ForeColor = Color.Black;
-            button2.Location = new Point(379, 323);
+            button2.Location = new Point(379, 393);
             button2.Name = "button2";
             button2.Size = new Size(94, 33);
             button2.TabIndex = 32;
@@ -193,7 +185,7 @@
             // 
             button1.BackColor = Color.FromArgb(142, 195, 176);
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(245, 323);
+            button1.Location = new Point(245, 393);
             button1.Name = "button1";
             button1.Size = new Size(94, 33);
             button1.TabIndex = 31;
@@ -236,12 +228,33 @@
             label11.TabIndex = 27;
             label11.Text = "Adresa E-pošte:";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(28, 318);
+            label1.Name = "label1";
+            label1.Size = new Size(83, 20);
+            label1.TabIndex = 33;
+            label1.Text = "Napomena:";
+            // 
+            // textBox9
+            // 
+            textBox9.Location = new Point(144, 315);
+            textBox9.Multiline = true;
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(325, 72);
+            textBox9.TabIndex = 34;
+            // 
             // FormPartneriDodaj
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(217, 235, 228);
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox9);
+            Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox8);
@@ -261,7 +274,6 @@
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormPartneriDodaj";
             Text = "FormPartneriDodaj";
@@ -270,8 +282,6 @@
         }
 
         #endregion
-
-        private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
@@ -291,5 +301,7 @@
         private Label label12;
         private TextBox textBox7;
         private Label label11;
+        private Label label1;
+        private TextBox textBox9;
     }
 }

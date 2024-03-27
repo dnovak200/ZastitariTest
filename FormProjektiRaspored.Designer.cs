@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle13 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle14 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle15 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle16 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle17 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle18 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             pnlHeader = new Panel();
+            label1 = new Label();
             comboBoxProjekti = new ComboBox();
             lblProjektiNaziv = new Label();
             btnPrihvati = new Button();
@@ -44,11 +44,11 @@
             lblPartneriNaziv = new Label();
             btnUpisi = new Button();
             pnlFooter = new Panel();
+            button1 = new Button();
             dataGridView1 = new DataGridView();
             dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
             dataGridViewComboBoxColumn1 = new DataGridViewComboBoxColumn();
             dataGridViewComboBoxColumn2 = new DataGridViewComboBoxColumn();
-            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
             dataGridViewCheckBoxColumn1 = new DataGridViewCheckBoxColumn();
             pnlHeader.SuspendLayout();
@@ -59,6 +59,7 @@
             // pnlHeader
             // 
             pnlHeader.BackColor = Color.FromArgb(217, 235, 228);
+            pnlHeader.Controls.Add(label1);
             pnlHeader.Controls.Add(comboBoxProjekti);
             pnlHeader.Controls.Add(lblProjektiNaziv);
             pnlHeader.Controls.Add(btnPrihvati);
@@ -69,14 +70,24 @@
             pnlHeader.Dock = DockStyle.Top;
             pnlHeader.Location = new Point(0, 0);
             pnlHeader.Name = "pnlHeader";
-            pnlHeader.Size = new Size(1115, 93);
+            pnlHeader.Size = new Size(1115, 134);
             pnlHeader.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(519, 31);
+            label1.TabIndex = 29;
+            label1.Text = "Raspored djelatnika po projektima i smjenama";
             // 
             // comboBoxProjekti
             // 
             comboBoxProjekti.FormattingEnabled = true;
             comboBoxProjekti.Items.AddRange(new object[] { "Poslovna zgrada 1.", "Poslovna zgrada 2.", "Poslovna zgrada 3.", "Skladište 1.", "Skladište 2.", "Skladište 3." });
-            comboBoxProjekti.Location = new Point(90, 47);
+            comboBoxProjekti.Location = new Point(90, 86);
             comboBoxProjekti.Name = "comboBoxProjekti";
             comboBoxProjekti.Size = new Size(278, 28);
             comboBoxProjekti.TabIndex = 28;
@@ -86,7 +97,7 @@
             lblProjektiNaziv.AutoSize = true;
             lblProjektiNaziv.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
             lblProjektiNaziv.ForeColor = Color.Black;
-            lblProjektiNaziv.Location = new Point(11, 51);
+            lblProjektiNaziv.Location = new Point(11, 90);
             lblProjektiNaziv.Name = "lblProjektiNaziv";
             lblProjektiNaziv.Size = new Size(57, 20);
             lblProjektiNaziv.TabIndex = 27;
@@ -105,7 +116,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(570, 12);
+            dateTimePicker1.Location = new Point(570, 51);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(250, 27);
             dateTimePicker1.TabIndex = 4;
@@ -115,7 +126,7 @@
             lblDatum.AutoSize = true;
             lblDatum.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
             lblDatum.ForeColor = Color.Black;
-            lblDatum.Location = new Point(416, 17);
+            lblDatum.Location = new Point(416, 56);
             lblDatum.Name = "lblDatum";
             lblDatum.Size = new Size(136, 20);
             lblDatum.TabIndex = 3;
@@ -125,7 +136,7 @@
             // 
             comboBoxPartneri.FormattingEnabled = true;
             comboBoxPartneri.Items.AddRange(new object[] { "Partner 1.", "Partner 2.", "Partner 3.", "Partner 4." });
-            comboBoxPartneri.Location = new Point(90, 13);
+            comboBoxPartneri.Location = new Point(90, 52);
             comboBoxPartneri.Name = "comboBoxPartneri";
             comboBoxPartneri.Size = new Size(278, 28);
             comboBoxPartneri.TabIndex = 2;
@@ -135,7 +146,7 @@
             lblPartneriNaziv.AutoSize = true;
             lblPartneriNaziv.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
             lblPartneriNaziv.ForeColor = Color.Black;
-            lblPartneriNaziv.Location = new Point(11, 17);
+            lblPartneriNaziv.Location = new Point(11, 56);
             lblPartneriNaziv.Name = "lblPartneriNaziv";
             lblPartneriNaziv.Size = new Size(59, 20);
             lblPartneriNaziv.TabIndex = 0;
@@ -155,6 +166,7 @@
             // pnlFooter
             // 
             pnlFooter.BackColor = Color.FromArgb(217, 235, 228);
+            pnlFooter.Controls.Add(button1);
             pnlFooter.Controls.Add(btnUpisi);
             pnlFooter.Dock = DockStyle.Bottom;
             pnlFooter.Location = new Point(0, 493);
@@ -162,33 +174,45 @@
             pnlFooter.Size = new Size(1115, 54);
             pnlFooter.TabIndex = 1;
             // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button1.BackColor = Color.FromArgb(142, 195, 176);
+            button1.Location = new Point(832, 9);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 33);
+            button1.TabIndex = 28;
+            button1.Text = "Kopiraj";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // dataGridView1
             // 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewComboBoxColumn1, dataGridViewComboBoxColumn2, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewCheckBoxColumn1 });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewComboBoxColumn1, dataGridViewComboBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewCheckBoxColumn1 });
             dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 93);
+            dataGridView1.Location = new Point(0, 134);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1115, 400);
+            dataGridView1.Size = new Size(1115, 359);
             dataGridView1.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            dataGridViewCellStyle13.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle13.ForeColor = Color.Black;
-            dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewTextBoxColumn1.HeaderText = "Šifra Osobe";
             dataGridViewTextBoxColumn1.MinimumWidth = 90;
             dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewComboBoxColumn1
             // 
-            dataGridViewCellStyle14.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle14.ForeColor = Color.Black;
-            dataGridViewComboBoxColumn1.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dataGridViewComboBoxColumn1.DefaultCellStyle = dataGridViewCellStyle2;
             dataGridViewComboBoxColumn1.HeaderText = "Djelatnik";
             dataGridViewComboBoxColumn1.Items.AddRange(new object[] { "Djelatnik 1.", "Djelatnik 2.", "Djelatnik 3.", "Djelatnik 4", "Djelatnik 5.", "Djelatnik 6." });
             dataGridViewComboBoxColumn1.MinimumWidth = 350;
@@ -198,9 +222,9 @@
             // 
             // dataGridViewComboBoxColumn2
             // 
-            dataGridViewCellStyle15.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle15.ForeColor = Color.Black;
-            dataGridViewComboBoxColumn2.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = Color.Black;
+            dataGridViewComboBoxColumn2.DefaultCellStyle = dataGridViewCellStyle3;
             dataGridViewComboBoxColumn2.HeaderText = "Smjena";
             dataGridViewComboBoxColumn2.Items.AddRange(new object[] { "1. smjena", "2. smjena", "3. smjena" });
             dataGridViewComboBoxColumn2.MinimumWidth = 150;
@@ -208,31 +232,22 @@
             dataGridViewComboBoxColumn2.Resizable = DataGridViewTriState.True;
             dataGridViewComboBoxColumn2.SortMode = DataGridViewColumnSortMode.Automatic;
             // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewCellStyle16.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle16.ForeColor = Color.Black;
-            dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle16;
-            dataGridViewTextBoxColumn2.HeaderText = "Od";
-            dataGridViewTextBoxColumn2.MinimumWidth = 80;
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
             // dataGridViewTextBoxColumn3
             // 
-            dataGridViewCellStyle17.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle17.ForeColor = Color.Black;
-            dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle17;
-            dataGridViewTextBoxColumn3.HeaderText = "Do";
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = Color.Black;
+            dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewTextBoxColumn3.HeaderText = "Napomena";
             dataGridViewTextBoxColumn3.MinimumWidth = 80;
             dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewCheckBoxColumn1
             // 
-            dataGridViewCellStyle18.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle18.ForeColor = Color.Black;
-            dataGridViewCellStyle18.NullValue = false;
-            dataGridViewCheckBoxColumn1.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle5.ForeColor = Color.Black;
+            dataGridViewCellStyle5.NullValue = false;
+            dataGridViewCheckBoxColumn1.DefaultCellStyle = dataGridViewCellStyle5;
             dataGridViewCheckBoxColumn1.HeaderText = "Odrađeno";
             dataGridViewCheckBoxColumn1.MinimumWidth = 100;
             dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
@@ -274,8 +289,9 @@
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewComboBoxColumn dataGridViewComboBoxColumn1;
         private DataGridViewComboBoxColumn dataGridViewComboBoxColumn2;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private Button button1;
+        private Label label1;
     }
 }

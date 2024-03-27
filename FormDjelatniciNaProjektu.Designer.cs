@@ -60,7 +60,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Projekt 1", "Projekt 2", "Projekt 3", "Projekt 4" });
+            comboBox1.Items.AddRange(new object[] { "Poslovna zgrada 1.", "Poslovna zgrada 2.", "Poslovna zgrada 3.", "Skladište 1.", "Skladište 2.", "Skladište 3." });
             comboBox1.Location = new Point(131, 98);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(325, 28);

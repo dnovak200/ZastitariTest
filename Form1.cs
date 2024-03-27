@@ -2,10 +2,16 @@ namespace ZastitariTest
 {
     public partial class Form1 : Form
     {
-        FormOsobeDodaj formOsobeDodaj;
-        FormProjektiRaspored formProjektiRaspored;
+
         FormPartneriDodaj formPartneriDodaj;
+        FormPartneriPregled formPartneriPregled;
+
         FormProjektiDodaj formProjektiDodaj;
+        FormProjektiPregled formProjektiPregled;
+        FormProjektiAnaliza formProjektiAnaliza;
+        FormProjektiRaspored formProjektiRaspored;
+
+        FormOsobeDodaj formOsobeDodaj;
         FormOsobePregled formOsobePregled;
 
 
@@ -55,7 +61,7 @@ namespace ZastitariTest
             if (projektiExpand == false)
             {
                 projektiContainer.Height += 8;
-                if (projektiContainer.Height >= 211)
+                if (projektiContainer.Height >= 246)
                 {
                     projektiTransition.Stop();
                     projektiExpand = true;
@@ -245,6 +251,72 @@ namespace ZastitariTest
         private void FormOsobePregled_FormClosing(object? sender, FormClosingEventArgs e)
         {
             formOsobePregled = null;
+        }
+
+        private void btnPartneriPregled_Click(object sender, EventArgs e)
+        {
+            if (formPartneriPregled == null)
+            {
+                formPartneriPregled = new FormPartneriPregled();
+                formPartneriPregled.FormClosing += FormPartneriPregled_FormClosing;
+                formPartneriPregled.MdiParent = this;
+                formPartneriPregled.Show();
+                formPartneriPregled.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                formPartneriPregled.Activate();
+            }
+
+        }
+
+        private void FormPartneriPregled_FormClosing(object? sender, FormClosingEventArgs e)
+        {
+            formPartneriPregled = null;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (formProjektiPregled == null)
+            {
+                formProjektiPregled = new FormProjektiPregled();
+                formProjektiPregled.FormClosing += FormProjektiPregled_FormClosing;
+                formProjektiPregled.MdiParent = this;
+                formProjektiPregled.Show();
+                formProjektiPregled.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                formProjektiPregled.Activate();
+            }
+
+        }
+
+        private void FormProjektiPregled_FormClosing(object? sender, FormClosingEventArgs e)
+        {
+            formProjektiPregled = null;
+        }
+
+        private void btnProjektiAnaliza_Click(object sender, EventArgs e)
+        {
+            if (formProjektiAnaliza == null)
+            {
+                formProjektiAnaliza = new FormProjektiAnaliza();
+                formProjektiAnaliza.FormClosing += FormProjektiAnaliza_FormClosing;
+                formProjektiAnaliza.MdiParent = this;
+                formProjektiAnaliza.Show();
+                formProjektiAnaliza.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                formProjektiAnaliza.Activate();
+            }
+
+        }
+
+        private void FormProjektiAnaliza_FormClosing(object? sender, FormClosingEventArgs e)
+        {
+            formProjektiAnaliza = null;
         }
     }
 }
