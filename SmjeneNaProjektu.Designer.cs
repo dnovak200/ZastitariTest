@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SmjeneNaProjektu));
             comboBox1 = new ComboBox();
             label3 = new Label();
             textBox1 = new TextBox();
@@ -167,6 +168,7 @@
             button3.TabIndex = 38;
             button3.Text = "Odustani";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -189,8 +191,9 @@
             Controls.Add(button4);
             Controls.Add(dataGridView1);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "SmjeneNaProjektu";
-            Text = "SmjeneNaProjektu";
+            Text = "ITS Guardian";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

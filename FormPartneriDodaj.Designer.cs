@@ -180,6 +180,7 @@
             button2.TabIndex = 32;
             button2.Text = "Odustani";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 

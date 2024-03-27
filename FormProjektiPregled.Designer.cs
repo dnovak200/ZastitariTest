@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            button1 = new Button();
             label1 = new Label();
             btnPrihvati = new Button();
             comboBoxPartneri = new ComboBox();
@@ -49,6 +50,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(217, 235, 228);
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(btnPrihvati);
             panel1.Controls.Add(comboBoxPartneri);
@@ -58,6 +60,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(995, 94);
             panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button1.BackColor = Color.FromArgb(142, 195, 176);
+            button1.Location = new Point(889, 53);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 33);
+            button1.TabIndex = 35;
+            button1.Text = "Izlaz";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
@@ -74,7 +88,7 @@
             // 
             btnPrihvati.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnPrihvati.BackColor = Color.FromArgb(142, 195, 176);
-            btnPrihvati.Location = new Point(893, 56);
+            btnPrihvati.Location = new Point(772, 53);
             btnPrihvati.Name = "btnPrihvati";
             btnPrihvati.Size = new Size(94, 33);
             btnPrihvati.TabIndex = 33;
@@ -174,6 +188,7 @@
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormProjektiPregled";
             Text = "FormProjektiPregled";
             panel1.ResumeLayout(false);
@@ -198,5 +213,6 @@
         private DataGridViewTextBoxColumn Column5;
         private Panel panel3;
         private Label label1;
+        private Button button1;
     }
 }

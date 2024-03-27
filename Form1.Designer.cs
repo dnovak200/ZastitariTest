@@ -177,7 +177,7 @@ namespace ZastitariTest
             sideBar.Location = new Point(0, 39);
             sideBar.Margin = new Padding(0);
             sideBar.Name = "sideBar";
-            sideBar.Size = new Size(180, 564);
+            sideBar.Size = new Size(180, 604);
             sideBar.TabIndex = 20;
             // 
             // partneriContainer
@@ -579,15 +579,15 @@ namespace ZastitariTest
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(1280, 603);
+            ClientSize = new Size(1280, 643);
             Controls.Add(sideBar);
             Controls.Add(panel1);
             Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            ForeColor = Color.White;
+            ForeColor = Color.Black;
             Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             Name = "Form1";
-            Text = "Form1";
+            Text = "ITS Gurdian";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

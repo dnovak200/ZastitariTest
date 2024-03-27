@@ -81,6 +81,7 @@
             button4.TabIndex = 38;
             button4.Text = "Zatvori";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // FormOsobePregled
             // 
