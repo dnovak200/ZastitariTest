@@ -53,7 +53,7 @@
             Column6 = new DataGridViewTextBoxColumn();
             Column7 = new DataGridViewTextBoxColumn();
             Column8 = new DataGridViewTextBoxColumn();
-            Column9 = new DataGridViewTextBoxColumn();
+            RUC = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -235,7 +235,7 @@
             // 
             dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8, Column9 });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6, Column7, Column8, RUC });
             dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
@@ -298,12 +298,13 @@
             Column8.Name = "Column8";
             Column8.Width = 80;
             // 
-            // Column9
+            // RUC
             // 
-            Column9.HeaderText = "RUC";
-            Column9.MinimumWidth = 80;
-            Column9.Name = "Column9";
-            Column9.Width = 80;
+            RUC.HeaderText = "RUC";
+            RUC.MinimumWidth = 80;
+            RUC.Name = "RUC";
+            RUC.Resizable = DataGridViewTriState.True;
+            RUC.Width = 80;
             // 
             // FormProjektiAnaliza
             // 
@@ -350,6 +351,6 @@
         private DataGridViewTextBoxColumn Column6;
         private DataGridViewTextBoxColumn Column7;
         private DataGridViewTextBoxColumn Column8;
-        private DataGridViewTextBoxColumn Column9;
+        private DataGridViewTextBoxColumn RUC;
     }
 }

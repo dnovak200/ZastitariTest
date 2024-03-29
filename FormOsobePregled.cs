@@ -1,33 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using ClosedXML.Excel;
+using System.Configuration;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Data.SQLite;
+
 
 namespace ZastitariTest
 {
+
     public partial class FormOsobePregled : Form
     {
-        public FormOsobePregled()
-        {
-            InitializeComponent();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-    }
-}
-
-
-/* public partial class FormOsobePregled : Form
-    {
-        private string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnection"].ConnectionString;
+        private readonly string connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnection"].ConnectionString;
 
         private SQLiteConnection? connection;
         private SQLiteDataAdapter? adapter;
@@ -51,14 +33,14 @@ namespace ZastitariTest
 
             // SELECT
             adapter.SelectCommand = new SQLiteCommand("SELECT sifra, ime, prezime, ugovor_aktivan FROM djelatnik", connection);
-            
+
             // INSERT
             adapter.InsertCommand = new SQLiteCommand("INSERT INTO djelatnik (sifra, ime, prezime, ugovor_aktivan) VALUES (@sifra, @ime, @prezime, @ugovor_aktivan)", connection);
             adapter.InsertCommand.Parameters.Add("@sifra", DbType.String, 0, "sifra");
             adapter.InsertCommand.Parameters.Add("@ime", DbType.String, 0, "ime");
             adapter.InsertCommand.Parameters.Add("@prezime", DbType.String, 0, "prezime");
             adapter.InsertCommand.Parameters.Add("@ugovor_aktivan", DbType.Boolean, 0, "ugovor_aktivan");
-            
+
             // UPDATE
             adapter.UpdateCommand = new SQLiteCommand("UPDATE djelatnik SET ime = @ime, prezime = @prezime, ugovor_aktivan = @ugovor_aktivan WHERE sifra = @sifra", connection);
             adapter.UpdateCommand.Parameters.Add("@sifra", DbType.String, 0, "sifra");
@@ -120,7 +102,8 @@ namespace ZastitariTest
             {
                 wb.Worksheets.Add(dataTable, "Djelatnici");
                 wb.Worksheet(1).Cells("A1:D1").Style.Fill.BackgroundColor = XLColor.DarkGreen;
-                wb.SaveAs(@"C:\Users\Kristijan\Desktop\test.xlsx");
+                wb.SaveAs("test.xlsx");
             }
         }
-    } */
+    }
+}

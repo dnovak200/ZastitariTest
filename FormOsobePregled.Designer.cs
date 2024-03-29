@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewCheckBoxColumn();
+            sifra = new DataGridViewTextBoxColumn();
+            ime = new DataGridViewTextBoxColumn();
+            prezime = new DataGridViewTextBoxColumn();
+            ugovor_aktivan = new DataGridViewCheckBoxColumn();
             button4 = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -40,48 +42,69 @@
             // 
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { sifra, ime, prezime, ugovor_aktivan });
             dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(903, 450);
+            dataGridView1.Size = new Size(903, 360);
             dataGridView1.TabIndex = 0;
             // 
-            // Column1
+            // sifra
             // 
-            Column1.HeaderText = "Šifra djelatnika";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 90;
+            sifra.DataPropertyName = "sifra";
+            sifra.HeaderText = "Šifra djelatnika";
+            sifra.MinimumWidth = 6;
+            sifra.Name = "sifra";
+            sifra.Width = 200;
             // 
-            // Column2
+            // ime
             // 
-            Column2.HeaderText = "Ime i Prezime djelatnika";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 400;
+            ime.DataPropertyName = "ime";
+            ime.HeaderText = "Ime djelatnika";
+            ime.MinimumWidth = 6;
+            ime.Name = "ime";
+            ime.Width = 200;
             // 
-            // Column3
+            // prezime
             // 
-            Column3.HeaderText = "Ugovor aktivan";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Resizable = DataGridViewTriState.True;
-            Column3.SortMode = DataGridViewColumnSortMode.Automatic;
-            Column3.Width = 125;
+            prezime.DataPropertyName = "prezime";
+            prezime.HeaderText = "Prezime djelatnika";
+            prezime.MinimumWidth = 6;
+            prezime.Name = "prezime";
+            prezime.Width = 125;
+            // 
+            // ugovor_aktivan
+            // 
+            ugovor_aktivan.DataPropertyName = "ugovor_aktivan";
+            ugovor_aktivan.HeaderText = "Ugovor aktivan";
+            ugovor_aktivan.MinimumWidth = 6;
+            ugovor_aktivan.Name = "ugovor_aktivan";
+            ugovor_aktivan.Resizable = DataGridViewTriState.True;
+            ugovor_aktivan.SortMode = DataGridViewColumnSortMode.Automatic;
+            ugovor_aktivan.Width = 125;
             // 
             // button4
             // 
             button4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             button4.BackColor = Color.FromArgb(142, 195, 176);
             button4.ForeColor = Color.Black;
-            button4.Location = new Point(734, 366);
+            button4.Location = new Point(797, 405);
             button4.Name = "button4";
             button4.Size = new Size(94, 33);
             button4.TabIndex = 38;
-            button4.Text = "Zatvori";
+            button4.Text = "Potvrdi";
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(697, 409);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 39;
+            button1.Text = "Excel";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // FormOsobePregled
             // 
@@ -89,11 +112,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(217, 235, 228);
             ClientSize = new Size(903, 450);
+            Controls.Add(button1);
             Controls.Add(button4);
             Controls.Add(dataGridView1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormOsobePregled";
             Text = "FormOsobePregled";
+            Load += FormOsobePregled_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
@@ -101,9 +126,11 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewCheckBoxColumn Column3;
         private Button button4;
+        private Button button1;
+        private DataGridViewTextBoxColumn sifra;
+        private DataGridViewTextBoxColumn ime;
+        private DataGridViewTextBoxColumn prezime;
+        private DataGridViewCheckBoxColumn ugovor_aktivan;
     }
 }
