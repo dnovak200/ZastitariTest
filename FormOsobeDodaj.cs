@@ -12,14 +12,21 @@ namespace ZastitariTest
 {
     public partial class FormOsobeDodaj : Form
     {
-        public FormOsobeDodaj()
+        private string sifra;
+        public FormOsobeDodaj(string sifra = "")
         {
             InitializeComponent();
+            this.sifra = sifra;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FormOsobeDodaj_Load(object sender, EventArgs e)
+        {
+            txtSifra.Text = sifra;
         }
     }
 }

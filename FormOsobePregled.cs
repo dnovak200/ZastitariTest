@@ -105,5 +105,22 @@ namespace ZastitariTest
                 wb.SaveAs("test.xlsx");
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Check if the clicked cell is the button column and ensure it's not the header row
+            if (e.ColumnIndex == 4 && e.RowIndex != -1)
+            {
+                // Retrieve user data from the selected row
+                var userData = dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+
+                // Open the form to modify the user data, passing the userData if needed
+                FormOsobeDodaj modifyForm = new FormOsobeDodaj(userData.ToString());
+                modifyForm.ShowDialog();
+
+                // After modification, refresh the DataGridView if needed
+                dataGridView1.Refresh();
+            }
+        }
     }
 }

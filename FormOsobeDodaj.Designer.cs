@@ -365,6 +365,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FormOsobeDodaj";
             Text = "FormOsobeDodaj";
+            Load += FormOsobeDodaj_Load;
             ResumeLayout(false);
             PerformLayout();
         }

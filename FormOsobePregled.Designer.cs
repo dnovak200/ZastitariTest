@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
+            button4 = new Button();
+            button1 = new Button();
             sifra = new DataGridViewTextBoxColumn();
             ime = new DataGridViewTextBoxColumn();
             prezime = new DataGridViewTextBoxColumn();
             ugovor_aktivan = new DataGridViewCheckBoxColumn();
-            button4 = new Button();
-            button1 = new Button();
+            Azuriranje = new DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -42,12 +43,36 @@
             // 
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { sifra, ime, prezime, ugovor_aktivan });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { sifra, ime, prezime, ugovor_aktivan, Azuriranje });
             dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(903, 360);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // button4
+            // 
+            button4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            button4.BackColor = Color.FromArgb(142, 195, 176);
+            button4.ForeColor = Color.Black;
+            button4.Location = new Point(797, 405);
+            button4.Name = "button4";
+            button4.Size = new Size(94, 33);
+            button4.TabIndex = 38;
+            button4.Text = "Potvrdi";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(697, 409);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 39;
+            button1.Text = "Excel";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // sifra
             // 
@@ -55,6 +80,7 @@
             sifra.HeaderText = "Šifra djelatnika";
             sifra.MinimumWidth = 6;
             sifra.Name = "sifra";
+            sifra.Resizable = DataGridViewTriState.True;
             sifra.Width = 200;
             // 
             // ime
@@ -83,28 +109,13 @@
             ugovor_aktivan.SortMode = DataGridViewColumnSortMode.Automatic;
             ugovor_aktivan.Width = 125;
             // 
-            // button4
+            // Azuriranje
             // 
-            button4.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button4.BackColor = Color.FromArgb(142, 195, 176);
-            button4.ForeColor = Color.Black;
-            button4.Location = new Point(797, 405);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 33);
-            button4.TabIndex = 38;
-            button4.Text = "Potvrdi";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(697, 409);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 39;
-            button1.Text = "Excel";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            Azuriranje.DataPropertyName = "azuriranje";
+            Azuriranje.HeaderText = "Ažuriranje";
+            Azuriranje.MinimumWidth = 6;
+            Azuriranje.Name = "Azuriranje";
+            Azuriranje.Width = 125;
             // 
             // FormOsobePregled
             // 
@@ -132,5 +143,6 @@
         private DataGridViewTextBoxColumn ime;
         private DataGridViewTextBoxColumn prezime;
         private DataGridViewCheckBoxColumn ugovor_aktivan;
+        private DataGridViewButtonColumn Azuriranje;
     }
 }
