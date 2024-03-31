@@ -33,7 +33,7 @@
             label3 = new Label();
             lblPrezime = new Label();
             txtPrezime = new TextBox();
-            textBox3 = new TextBox();
+            txtIme = new TextBox();
             label5 = new Label();
             textBox4 = new TextBox();
             label6 = new Label();
@@ -104,12 +104,12 @@
             txtPrezime.Size = new Size(125, 27);
             txtPrezime.TabIndex = 5;
             // 
-            // textBox3
+            // txtIme
             // 
-            textBox3.Location = new Point(127, 122);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 7;
+            txtIme.Location = new Point(127, 122);
+            txtIme.Name = "txtIme";
+            txtIme.Size = new Size(125, 27);
+            txtIme.TabIndex = 7;
             // 
             // label5
             // 
@@ -234,6 +234,7 @@
             button1.TabIndex = 25;
             button1.Text = "Prihvati";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -329,6 +330,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = Color.FromArgb(217, 235, 228);
             ClientSize = new Size(722, 604);
             Controls.Add(textBox10);
@@ -354,7 +356,7 @@
             Controls.Add(label7);
             Controls.Add(textBox4);
             Controls.Add(label6);
-            Controls.Add(textBox3);
+            Controls.Add(txtIme);
             Controls.Add(label5);
             Controls.Add(txtPrezime);
             Controls.Add(lblPrezime);
@@ -362,7 +364,6 @@
             Controls.Add(lblSifra);
             Controls.Add(txtSifra);
             ForeColor = Color.Black;
-            FormBorderStyle = FormBorderStyle.None;
             Name = "FormOsobeDodaj";
             Text = "FormOsobeDodaj";
             Load += FormOsobeDodaj_Load;
@@ -376,7 +377,7 @@
         private Label label3;
         private Label lblPrezime;
         private TextBox txtPrezime;
-        private TextBox textBox3;
+        private TextBox txtIme;
         private Label label5;
         private TextBox textBox4;
         private Label label6;
