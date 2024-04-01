@@ -117,9 +117,10 @@ namespace ZastitariTest
                 // Open the form to modify the user data, passing the userData if needed
                 FormOsobeDodaj modifyForm = new FormOsobeDodaj(userData.ToString());
                 modifyForm.ShowDialog();
+                this.Close();
 
                 // After modification, refresh the DataGridView if needed
-                dataGridView1.Refresh();
+                //dataGridView1.Refresh();
             }
         }
     }
